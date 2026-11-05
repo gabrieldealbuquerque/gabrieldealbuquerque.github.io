@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <title>Gabriel de Albuquerque — Currículo</title>
+    <link rel="icon" href="assets/favicon.svg" />
+    <style>
+      @font-face {
+        font-family: Manrope;
+        src: url("assets/fonts/manrope.woff2");
+        font-weight: 200 800;
+        font-display: swap;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Manrope, Arial, sans-serif;
+        color: #252823;
+        font-size: 10pt;
+        line-height: 1.36;
+        max-width: 750px;
+        margin: 40px auto;
+        padding: 0 30px;
+      }
+      h1 {
+        font-size: 29px;
+        line-height: 1.1;
+        letter-spacing: -1px;
+        margin: 0 0 8px;
+      }
+      h2 {
+        font-size: 11pt;
+        border-bottom: 1px solid #c9ccc1;
+        padding-bottom: 5px;
+        margin: 10px 0 5px;
+        color: #ad3628;
+      }
+      h3 {
+        font-size: 10pt;
+        margin: 6px 0 2px;
+      }
+      p {
+        margin: 3px 0;
+      }
+      a {
+        color: inherit;
+        text-underline-offset: 2px;
+      }
+      .intro {
+        font-size: 10pt;
+        margin: 10px 0;
+      }
+      .contact {
+        font-size: 9pt;
+        line-height: 1.6;
+      }
+      .position {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 20px;
+      }
+      .position span {
+        font-size: 9pt;
+        color: #53594b;
+      }
+      .skills p {
+        margin: 4px 0;
+      }
+      .project {
+        margin-top: 6px;
+      }
+      .project strong {
+        font-size: 10pt;
+      }
+      .project a {
+        font-size: 9pt;
+      }
+      .actions {
+        display: flex;
+        gap: 20px;
+        margin-top: 25px;
+      }
+      .actions a,
+      .actions button {
+        padding: 10px;
+        background: #f0f0e9;
+        border: 0;
+        color: #252823;
+        cursor: pointer;
+        font: inherit;
+      }
+      @page {
+        size: A4;
+        margin: 12mm 14mm;
+      }
+      @media print {
+        body {
+          max-width: none;
+          margin: 0;
+          padding: 0;
+        }
+        .actions {
+          display: none;
+        }
+        h2,
+        h3 {
+          break-after: avoid;
+        }
+        .project,
+        .skills p,
+        .position {
+          break-inside: avoid;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Gabriel de Albuquerque</h1>
+    <p class="intro">
+      Desenvolvimento de software · Backend · Full stack · Inteligência
+      artificial
+    </p>
+    <div class="contact">
+      <a href="mailto:gabrieldealbuquerque1@gmail.com"
+        >gabrieldealbuquerque1@gmail.com</a
+      >
+      ·
+      <a href="https://gabrieldealbuquerque.github.io/"
+        >gabrieldealbuquerque.github.io</a
+      ><br /><a href="https://github.com/gabrieldealbuquerque"
+        >github.com/gabrieldealbuquerque</a
+      >
+      ·
+      <a
+        href="https://www.linkedin.com/in/gabriel-de-albuquerque-santos-32b869294/"
+        >LinkedIn: Gabriel de Albuquerque Santos</a
+      >
+    </div>
+    <h2>Perfil</h2>
+    <p>
+      CTO na Acctsy e estudante de Ciência da Computação na UFES. Atuação em
+      desenvolvimento full stack, arquitetura de backend, integração com
+      inteligência artificial e infraestrutura. Experiência com produtos SaaS,
+      processamento de documentos e projetos web em equipe.
+    </p>
+    <h2>Experiência e projetos profissionais</h2>
+    <div class="position">
+      <h3>Acctsy — CTO</h3>
+      <span>Atuação atual</span>
+    </div>
+    <p>
+      Desenvolvimento de um SaaS contábil, conectando arquitetura, APIs,
+      interfaces e operação. Backend multi-tenant, permissões por escritório e
+      cliente, processamento assíncrono de documentos, análise financeira e
+      geração de relatórios. Integração com modelos de IA, engenharia de prompt
+      e RAG.
+    </p>
+    <p>
+      <strong>Tecnologias:</strong> Python, FastAPI, Next.js, React, TypeScript,
+      PostgreSQL, Redis e Docker.
+    </p>
+    <div class="position">
+      <h3>Meridian — Desenvolvimento em equipe</h3>
+      <span
+        ><a href="https://www.meridianlab.com.br/">meridianlab.com.br</a></span
+      >
+    </div>
+    <p>
+      Participação em grupo independente de tecnologia formado por estudantes da
+      UFES, com desenvolvimento de sites, sistemas e automações para negócios.
+      Colaboração em projetos da definição da solução à entrega.
+    </p>
+    <div class="position">
+      <h3>TOV — Site institucional e gestão de conteúdo</h3>
+      <span><a href="https://tov.adv.br/">tov.adv.br</a></span>
+    </div>
+    <p>
+      Projeto desenvolvido com Pedro Henrique, pela Meridian. Interface em React
+      e TypeScript, painel próprio de publicação de artigos e integração com
+      backends Node.js ou PHP, conforme o ambiente de hospedagem. Persistência
+      em SQLite, sessões HttpOnly, proteção CSRF, sitemap e RSS.
+    </p>
+    <h2>Competências técnicas</h2>
+    <div class="skills">
+      <p>
+        <strong>Backend e dados:</strong> Python, FastAPI, Node.js, APIs REST,
+        PostgreSQL, SQLAlchemy, Redis e sistemas multi-tenant.
+      </p>
+      <p>
+        <strong>Frontend:</strong> TypeScript, React, Next.js, Astro, HTML e
+        CSS.
+      </p>
+      <p>
+        <strong>IA e machine learning:</strong> integração com LLMs, engenharia
+        de prompt, RAG, treinamento de modelos e fine-tuning.
+      </p>
+      <p>
+        <strong>Infraestrutura:</strong> Docker, Docker Compose, Linux, Git,
+        Nginx e Coolify.
+      </p>
+    </div>
+    <h2>Projetos acadêmicos selecionados</h2>
+    <div class="project">
+      <strong>Detecção de deadlock com eBPF — C, eBPF e Docker</strong>
+      <p>
+        Instrumentação de serviços TCP para detectar ciclos de espera e
+        recuperar a comunicação sem reiniciar processos.
+        <a
+          href="https://github.com/gabrieldealbuquerque/Deteccao-de-Deadlock-por-eBPF"
+          >Código no GitHub</a
+        >.
+      </p>
+    </div>
+    <div class="project">
+      <strong>Desktop remoto via sockets TCP — Python</strong>
+      <p>
+        Transmissão de tela e controle de mouse e teclado com protocolo próprio
+        de framing.
+        <a
+          href="https://github.com/gabrieldealbuquerque/Remote-Desktop-via-Sockets-TCP"
+          >Código no GitHub</a
+        >.
+      </p>
+    </div>
+    <div class="project">
+      <strong>Redes neurais e algoritmos — Python, Jupyter e C</strong>
+      <p>
+        Experimentos de regressão linear e gradiente; implementação de Dijkstra
+        com vetor.
+        <a href="https://github.com/gabrieldealbuquerque/Redes-Neurais"
+          >Redes Neurais</a
+        >
+        ·
+        <a href="https://github.com/gabrieldealbuquerque/Dijkstra_Vetor"
+          >Dijkstra</a
+        >.
+      </p>
+    </div>
+    <h2>Formação</h2>
+    <div class="position">
+      <h3>Ciência da Computação — UFES</h3>
+      <span>Conclusão prevista: final de 2027</span>
+    </div>
+    <p>Universidade Federal do Espírito Santo · Graduação em andamento.</p>
+    <div class="actions">
+      <a href="index.html">Voltar ao portfólio</a
+      ><a href="assets/Gabriel-de-Albuquerque-Curriculo.pdf" download
+        >Baixar PDF</a
+      >
+    </div>
+  </body>
+</html>

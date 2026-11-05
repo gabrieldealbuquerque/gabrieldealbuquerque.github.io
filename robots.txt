@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gabrieldealbuquerque.github.io/sitemap.xml
