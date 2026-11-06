@@ -288,7 +288,7 @@ function updateThemeButton() {
 function setTheme(theme, persist = false) {
   const dark = theme === "dark";
   document.documentElement.dataset.theme = dark ? "dark" : "light";
-  document.querySelector('meta[name="theme-color"]').content = dark ? "#161c19" : "#fafbf9";
+  document.querySelector('meta[name="theme-color"]').content = dark ? "#191919" : "#fafbf9";
   updateThemeButton();
   if (persist) {
     try {

@@ -32,18 +32,18 @@
 }
 html[data-theme="dark"] {
   color-scheme: dark;
-  --background: #161c19;
-  --text: #e5eae6;
-  --muted: #afbab1;
-  --accent: #9ecbae;
-  --line: #354138;
-  --selection: #314b3d;
-  --control-border: #526457;
-  --control-hover: #24332a;
-  --scrollbar: #657b6b;
-  --on-accent: #161c19;
-  --chart-house: #dfab83;
-  --chart-reference: #a5b2a9;
+  --background: #191919;
+  --text: #dedede;
+  --muted: #a6a6a6;
+  --accent: #c5c5c5;
+  --line: #333333;
+  --selection: #3a3a3a;
+  --control-border: #4b4b4b;
+  --control-hover: #252525;
+  --scrollbar: #5e5e5e;
+  --on-accent: #191919;
+  --chart-house: #bca68c;
+  --chart-reference: #868686;
 }
 * {
   box-sizing: border-box;
