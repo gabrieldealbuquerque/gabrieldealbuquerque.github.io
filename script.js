@@ -4,7 +4,7 @@ const translations = {
   pt: {
     rentRecognition: "Melhor precisão da turma na avaliação final de Inteligência Artificial · UFES",
     rentRepository: "Ver no GitHub",
-    rentOverview: "Estimativa de aluguéis residenciais com XGBoost, engenharia de atributos e comparação entre imóveis semelhantes. O gráfico mostra como as previsões se aproximam dos valores anunciados.",
+    rentOverview: "Projeto desenvolvido em equipe na disciplina de Inteligência Artificial da UFES para estimar o aluguel mensal de casas e apartamentos na Grande Vitória. O pipeline em Python combina tratamento de dados, atributos como localização e área, XGBoost e comparação com imóveis semelhantes. O repositório inclui o modelo treinado, exemplos e uma ferramenta de previsão por CSV. O gráfico apresenta as previsões de validação, separadas por tipo de imóvel.",
     rentMethod: "Validação cruzada em cinco grupos: cada imóvel foi avaliado por um modelo treinado nos outros grupos.",
     rentData: "Dados da validação (CSV)",
     rentMethodLink: "Como o modelo funciona",
@@ -33,45 +33,44 @@ const translations = {
     workTitle: "Experiência e projetos",
     acctsyRole: "CTO · atuação atual",
     acctsyDescription:
-      "Desenvolvo um SaaS para escritórios de contabilidade, da arquitetura e das APIs à interface e à infraestrutura. O trabalho envolve processamento de documentos, análise financeira, relatórios e integração com modelos de IA.",
+      "Como CTO da Acctsy, atuo no desenvolvimento de um SaaS para escritórios de contabilidade, conectando a rotina dos contadores ao atendimento de seus clientes. Meu trabalho vai da arquitetura do backend e das APIs às interfaces web e à infraestrutura, com Python, FastAPI, Next.js, PostgreSQL e Docker.",
     acctsyDetail:
-      "Backend multi-tenant, processamento assíncrono, engenharia de prompt e RAG.",
+      "Entre as frentes do produto estão o processamento assíncrono de documentos, a análise financeira e a geração de relatórios. Integro modelos de IA a esses fluxos, com engenharia de prompt e RAG, e trabalho no isolamento de dados entre escritórios, nas permissões de acesso e na comunicação entre os módulos.",
     meridianRole: "Software para clientes",
     meridianDescription:
-      "Iniciativa de desenvolvimento de software sob demanda, criada por estudantes da UFES. Construímos soluções para clientes, conectando suas necessidades ao desenvolvimento de produtos web.",
+      "Faço parte da Meridian, uma iniciativa de estudantes da UFES voltada ao desenvolvimento de software sob demanda. Trabalhamos com clientes para entender suas necessidades e transformá-las em sites, sistemas e produtos web. Minha atuação é no desenvolvimento full stack, em equipe, conectando a interface às funcionalidades de backend. O TOV é um dos projetos entregues por essa iniciativa.",
     meridianDetail:
       "React e TypeScript, com backends Node.js ou PHP e persistência em SQLite.",
     tovTitle: "TOV · Escritório de advocacia",
     tovDescription:
-      "Um dos projetos desenvolvidos em equipe pela Meridian: site institucional e painel próprio para publicação e gestão de artigos, aproximando o escritório de seus clientes.",
+      "Site institucional e painel de gestão de artigos para um escritório de advocacia, desenvolvidos em equipe pela Meridian.",
     meridianLinkedin: "Meridian no LinkedIn",
     rentTitle: "Previsão de aluguéis na Grande Vitória",
     rentDescription:
       "XGBoost e comparáveis. Melhor precisão da turma na avaliação final de IA.",
     gamelabRole: "Desenvolvimento de jogos",
     gamelabDescription:
-      "Participei da criação do jogo I LOVE EATING TRASH no Roblox, contribuindo com o mapa, as mecânicas do jogo e o sistema de spawn aleatório.",
+      "No UFES GameLab, participei do desenvolvimento em equipe de I LOVE EATING TRASH, um jogo para Roblox. Contribuí para a criação do mapa, a implementação das mecânicas e o mecanismo de spawn aleatório. Trabalhei com Lua no Roblox Studio, conectando a organização do cenário à lógica do jogo e ao surgimento de elementos durante a partida.",
     gameLink: "Conhecer o jogo",
     academicTitle: "Projetos acadêmicos",
     allProjects: "Todos no GitHub",
     ebpfTitle: "Detecção de deadlock com eBPF",
     ebpfDescription:
-      "Instrumentação de serviços TCP e recuperação da comunicação.",
+      "Laboratório em C que reproduz um deadlock de comunicação entre três serviços TCP em containers Docker. A instrumentação com eBPF acompanha as relações de espera, identifica o ciclo e aciona a recuperação da comunicação sem reiniciar os processos. O projeto reúne programação de sistemas, redes e observabilidade no Linux.",
     tcpTitle: "Desktop remoto via TCP",
     tcpDescription:
-      "Transmissão de tela e controle de mouse e teclado por sockets.",
+      "Aplicação cliente-servidor em Python para transmitir a tela de um computador e controlá-lo por mouse e teclado. Usa sockets TCP, frames JPEG e mensagens de entrada em JSON, com delimitação explícita das mensagens e threads para separar vídeo e comandos. O projeto explora protocolos de comunicação, serialização e concorrência.",
     mlTitle: "Redes neurais",
     mlDescription:
-      "Implementações de classificação, regressão e redes neurais com NumPy e PyTorch.",
-    dijkstraTitle: "Algoritmo de Dijkstra",
-    dijkstraDescription:
-      "Implementação com vetor para encontrar caminhos mínimos em grafos.",
+      "Coleção de notebooks da UFES que percorre os fundamentos das redes neurais: neurônio de McCulloch–Pitts, classificação, regressão linear, descida do gradiente e redes multicamadas. As implementações em NumPy e PyTorch incluem backpropagation e comparação entre gradientes calculados manualmente e por autograd, aproximando a matemática do código de treinamento.",
+    liftupTitle: "LiftUp · Aplicativo de treinos",
+    liftupDescription: "Protótipo colaborativo de aplicativo para organizar treinos, com React Native/Expo e API REST em Node.js/Express, PostgreSQL e Prisma. Contribuí para a organização do frontend e do backend, a configuração local e o diagrama do projeto. A API reúne autenticação e operações de treinos e exercícios; a integração das telas de treino segue em desenvolvimento.",
     backendLabel: "Backend",
     frontendLabel: "Frontend",
     skillsTitle: "Tecnologias e áreas de atuação",
     aiLabel: "Inteligência artificial",
     aiSkills:
-      "Integração com LLMs, engenharia de prompt, RAG, treinamento de ML e fine-tuning.",
+      "Integração de LLMs via APIs, engenharia de prompt, RAG, embeddings e busca semântica. Extração estruturada de documentos, OCR e pipelines de IA integrados a aplicações.",
     infraLabel: "Infraestrutura",
     contactTitle: "Contato",
     contactDescription:
@@ -81,11 +80,16 @@ const translations = {
     emailFailed:
       "Não foi possível copiar. Selecione o endereço acima para copiá-lo.",
     backTop: "Voltar ao início",
+    aiModelSkills: "Machine learning com scikit-learn, XGBoost e PyTorch: preparação de dados, engenharia de atributos, classificação, regressão, redes neurais, validação cruzada, avaliação de modelos e fine-tuning.",
+    ebpfPreview: "Diagrama da topologia TCP e do ciclo de espera entre três serviços monitorados por eBPF",
+    tcpPreview: "Demonstração do cliente de desktop remoto exibindo uma tela transmitida por TCP",
+    mlPreview: "Gráfico do notebook de redes neurais comparando dados de treino, curva de referência e previsões de uma MLP",
+    liftupPreview: "Identidade visual do projeto LiftUp",
   },
   en: {
     rentRecognition: "Highest accuracy in the class’s final Artificial Intelligence evaluation · UFES",
     rentRepository: "View on GitHub",
-    rentOverview: "Residential rent estimates using XGBoost, feature engineering and comparable properties. The chart shows how predictions compare with advertised rents.",
+    rentOverview: "A team project for UFES's Artificial Intelligence course, estimating monthly rents for houses and apartments in Greater Vitória. The Python pipeline combines data preparation, features such as location and floor area, XGBoost and comparable properties. The repository includes the trained model, examples and a CSV prediction tool. The chart presents validation predictions by property type.",
     rentMethod: "Five-fold cross-validation: each property was evaluated by a model trained on the other folds.",
     rentData: "Validation data (CSV)",
     rentMethodLink: "How the model works",
@@ -113,44 +117,43 @@ const translations = {
     workTitle: "Experience & projects",
     acctsyRole: "CTO · current role",
     acctsyDescription:
-      "I develop a SaaS platform for accounting firms, working across architecture, APIs, interfaces and infrastructure. The product brings together document processing, financial analysis, reporting and AI model integration.",
+      "As CTO at Acctsy, I work on a SaaS platform for accounting firms, connecting accountants' daily workflows with the services they provide to clients. My work spans backend architecture and APIs, web interfaces and infrastructure, using Python, FastAPI, Next.js, PostgreSQL and Docker.",
     acctsyDetail:
-      "Multi-tenant backend, asynchronous processing, prompt engineering and RAG.",
+      "The product includes asynchronous document processing, financial analysis and report generation. I integrate AI models into these workflows through prompt engineering and RAG, and work on data isolation between firms, access permissions and communication between modules.",
     meridianRole: "Software for clients",
     meridianDescription:
-      "A custom software development initiative founded by UFES students. We build solutions for clients, turning their needs into web products.",
+      "I am part of Meridian, a custom software development initiative founded by UFES students. We work with clients to understand their needs and turn them into websites, systems and web products. I contribute to full-stack development within the team, connecting interfaces to backend functionality. TOV is one of the projects delivered through this initiative.",
     meridianDetail:
       "React and TypeScript, with Node.js or PHP backends and SQLite storage.",
     tovTitle: "TOV · Law firm",
     tovDescription:
-      "One of Meridian's collaborative projects: a law firm website and a custom dashboard for publishing and managing articles, helping the firm connect with its clients.",
+      "A law firm website and article management dashboard, developed collaboratively at Meridian.",
     meridianLinkedin: "Meridian on LinkedIn",
     rentTitle: "Rental price prediction in Greater Vitória",
     rentDescription:
       "XGBoost and comparable properties. Highest accuracy in the class's final AI evaluation.",
     gamelabRole: "Game development",
     gamelabDescription:
-      "I took part in creating I LOVE EATING TRASH on Roblox, contributing to the map, game mechanics and random spawning system.",
+      "At UFES GameLab, I took part in the team development of I LOVE EATING TRASH, a Roblox game. I contributed to the map, game mechanics and random spawning system. Using Lua in Roblox Studio, I connected the layout of the environment with gameplay logic and the spawning of elements during play.",
     gameLink: "Explore the game",
     academicTitle: "Academic projects",
     allProjects: "All on GitHub",
     ebpfTitle: "Deadlock detection with eBPF",
-    ebpfDescription: "Instrumenting TCP services and restoring communication.",
+    ebpfDescription: "A C-based lab that reproduces a communication deadlock between three TCP services in Docker containers. eBPF instrumentation tracks waiting dependencies, detects the cycle and triggers communication recovery without restarting the processes. The project brings together systems programming, networking and Linux observability.",
     tcpTitle: "Remote desktop over TCP",
     tcpDescription:
-      "Screen streaming and mouse and keyboard control through sockets.",
+      "A Python client-server application for streaming a computer's screen and controlling its mouse and keyboard. It uses TCP sockets, JPEG frames and JSON input messages, with explicit message framing and threads separating video from commands. The project explores communication protocols, serialization and concurrency.",
     mlTitle: "Neural networks",
     mlDescription:
-      "Classification, regression and neural networks implemented with NumPy and PyTorch.",
-    dijkstraTitle: "Dijkstra's algorithm",
-    dijkstraDescription:
-      "Array-based implementation for finding shortest paths in graphs.",
+      "A collection of UFES notebooks covering neural network fundamentals: the McCulloch–Pitts neuron, classification, linear regression, gradient descent and multilayer networks. NumPy and PyTorch implementations include backpropagation and comparisons between manually calculated gradients and autograd, connecting the mathematics to training code.",
+    liftupTitle: "LiftUp · Workout app",
+    liftupDescription: "A collaborative workout app prototype using React Native/Expo and a Node.js/Express REST API with PostgreSQL and Prisma. I contributed to frontend/backend organization, local setup and the project diagram. The API includes authentication and workout and exercise operations; integration with the workout screens is still in development.",
     backendLabel: "Backend",
     frontendLabel: "Frontend",
     skillsTitle: "Technologies & areas of work",
     aiLabel: "Artificial intelligence",
     aiSkills:
-      "LLM integration, prompt engineering, RAG, ML model training and fine-tuning.",
+      "LLM integration through APIs, prompt engineering, RAG, embeddings and semantic search. Structured document extraction, OCR and AI pipelines integrated into applications.",
     infraLabel: "Infrastructure",
     contactTitle: "Contact",
     contactDescription:
@@ -160,11 +163,16 @@ const translations = {
     emailFailed:
       "Could not copy. Select the email address above to copy it manually.",
     backTop: "Back to top",
+    aiModelSkills: "Machine learning with scikit-learn, XGBoost and PyTorch: data preparation, feature engineering, classification, regression, neural networks, cross-validation, model evaluation and fine-tuning.",
+    ebpfPreview: "Diagram of the TCP topology and waiting cycle between three services monitored with eBPF",
+    tcpPreview: "Remote desktop client demonstration showing a screen transmitted over TCP",
+    mlPreview: "Neural network notebook plot comparing training data, a reference curve and MLP predictions",
+    liftupPreview: "LiftUp project visual identity",
   },
   ja: {
     rentRecognition: "UFESの人工知能科目の最終評価でクラス最高の予測精度を達成",
     rentRepository: "GitHubで見る",
-    rentOverview: "XGBoost、特徴量エンジニアリング、類似物件との比較を用いた住宅家賃の予測です。募集家賃と予測値の関係をグラフで確認できます。",
+    rentOverview: "UFESの人工知能科目でチーム開発した、グランデ・ヴィトーリアの集合住宅と一戸建ての月額家賃を予測するプロジェクトです。Pythonでデータを前処理し、所在地や面積などの特徴量、XGBoost、類似物件との比較を組み合わせています。リポジトリには学習済みモデル、入力例、CSVから予測するツールを収録しています。グラフでは物件種別ごとに検証時の予測値を確認できます。",
     rentMethod: "5分割交差検証を実施。各物件は、その物件を含まない他のグループで学習したモデルで評価しています。",
     rentData: "検証データ（CSV）",
     rentMethodLink: "モデルの仕組み",
@@ -193,42 +201,42 @@ const translations = {
     workTitle: "経験・制作実績",
     acctsyRole: "CTO · 現職",
     acctsyDescription:
-      "会計事務所向けSaaSの開発で、アーキテクチャ、API、画面、インフラまで担当しています。文書処理、財務分析、レポート作成、AIモデルとの連携に取り組んでいます。",
+      "AcctsyのCTOとして、会計事務所向けSaaSを開発しています。会計担当者の日々の業務と顧客対応をつなぐサービスで、バックエンド設計やAPIからWeb画面、インフラまで担当しています。主な技術はPython、FastAPI、Next.js、PostgreSQL、Dockerです。",
     acctsyDetail:
-      "マルチテナントのバックエンド、非同期処理、プロンプトエンジニアリング、RAG。",
+      "文書の非同期処理、財務分析、レポート生成に取り組んでいます。プロンプトエンジニアリングとRAGを用いてAIモデルを業務フローに組み込み、事務所ごとのデータ分離、アクセス権限、モジュール間の連携も実装しています。",
     meridianRole: "クライアント向け開発",
     meridianDescription:
-      "UFESの学生が立ち上げた受託ソフトウェア開発のプロジェクトです。クライアントの課題に合わせたWebプロダクトをチームで開発しています。",
+      "UFESの学生が立ち上げた受託ソフトウェア開発のプロジェクト、Meridianに参加しています。クライアントの要望を理解し、Webサイトやシステム、Webプロダクトとして形にしています。チームでフルスタック開発を担当し、画面とバックエンドの機能をつなぐ実装に取り組んでいます。TOVはその制作実績の一つです。",
     meridianDetail:
       "ReactとTypeScript、Node.jsまたはPHPのバックエンド、SQLiteを使用。",
     tovTitle: "TOV · 法律事務所",
     tovDescription:
-      "Meridianで共同開発したプロジェクトの一つです。法律事務所の紹介サイトと記事の公開・管理画面を制作し、顧客との接点を整えました。",
+      "Meridianのチームで開発した、法律事務所の紹介サイトと記事管理画面です。",
     meridianLinkedin: "MeridianのLinkedIn",
     rentTitle: "グランデ・ヴィトーリアの家賃予測",
     rentDescription:
       "XGBoostと類似物件を利用。AI科目の最終評価でクラス最高の予測精度を達成。",
     gamelabRole: "ゲーム開発",
     gamelabDescription:
-      "Robloxのゲーム「I LOVE EATING TRASH」の制作に参加しました。マップ制作、ゲームの仕組み、ランダムスポーンシステムの開発に携わりました。",
+      "UFES GameLabで、Roblox向けゲーム「I LOVE EATING TRASH」のチーム開発に参加しました。マップ制作、ゲームの仕組み、ランダムスポーンシステムを担当しました。Roblox StudioでLuaを使い、ステージの構成とゲームのロジック、プレイ中に要素が出現する仕組みを組み合わせました。",
     gameLink: "ゲームを見る",
     academicTitle: "大学でのプロジェクト",
     allProjects: "GitHubで一覧を見る",
     ebpfTitle: "eBPFによるデッドロック検出",
-    ebpfDescription: "TCPサービスを監視し、停止した通信を復旧する実験。",
+    ebpfDescription: "Docker上の3つのTCPサービス間で通信デッドロックを再現する、C言語の実験環境です。eBPFで待機関係を追跡して循環を検出し、プロセスを再起動せずに通信を復旧します。システムプログラミング、ネットワーク、Linuxの実行状態の観測を扱うプロジェクトです。",
     tcpTitle: "TCPによるリモートデスクトップ",
-    tcpDescription: "ソケット通信による画面転送とマウス・キーボード操作。",
+    tcpDescription: "画面転送とマウス・キーボード操作を行う、Pythonのクライアント・サーバー型アプリケーションです。TCPソケット、JPEGフレーム、JSON形式の入力メッセージを使い、メッセージ境界を明示して映像と操作を別のスレッドで処理します。通信プロトコル、シリアライズ、並行処理を学ぶ実装です。",
     mlTitle: "ニューラルネットワーク",
     mlDescription:
-      "NumPyとPyTorchによる分類・回帰・ニューラルネットワークの実装。",
-    dijkstraTitle: "ダイクストラ法",
-    dijkstraDescription: "配列を用いてグラフの最短経路を求める実装。",
+      "UFESで取り組んだ、ニューラルネットワークの基礎を学ぶノートブック集です。McCulloch–Pittsニューロン、分類、線形回帰、勾配降下法、多層ネットワークを扱います。NumPyとPyTorchによる誤差逆伝播や、手計算の勾配とautogradの比較を通じて、数式と学習コードを結び付けています。",
+    liftupTitle: "LiftUp · トレーニングアプリ",
+    liftupDescription: "React Native／Expoと、Node.js／Express、PostgreSQL、PrismaのREST APIを組み合わせた、チーム開発のトレーニング管理アプリのプロトタイプです。フロントエンドとバックエンドの構成整理、ローカル実行環境、設計図の作成に貢献しました。APIには認証とトレーニング・種目の管理機能があり、トレーニング画面との連携は開発中です。",
     backendLabel: "バックエンド",
     frontendLabel: "フロントエンド",
     skillsTitle: "技術・専門分野",
     aiLabel: "人工知能",
     aiSkills:
-      "LLM連携、プロンプトエンジニアリング、RAG、機械学習モデルの訓練、ファインチューニング。",
+      "APIを介したLLM連携、プロンプトエンジニアリング、RAG、埋め込み表現、意味検索。文書からの構造化データ抽出、OCR、アプリケーションに組み込むAIパイプライン。",
     infraLabel: "インフラ",
     contactTitle: "連絡先",
     contactDescription:
@@ -238,6 +246,11 @@ const translations = {
     emailFailed:
       "コピーできませんでした。上のメールアドレスを選択してコピーしてください。",
     backTop: "ページ上部へ",
+    aiModelSkills: "scikit-learn、XGBoost、PyTorchによる機械学習。データ前処理、特徴量エンジニアリング、分類、回帰、ニューラルネットワーク、交差検証、モデル評価、ファインチューニング。",
+    ebpfPreview: "eBPFで監視する3つのサービスのTCP構成と循環待機の図",
+    tcpPreview: "TCPで転送した画面を表示するリモートデスクトップクライアントのデモ",
+    mlPreview: "学習データ、基準曲線、MLPの予測を比較するニューラルネットワークのノートブックのグラフ",
+    liftupPreview: "LiftUpプロジェクトのロゴ",
   },
 };
 

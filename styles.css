@@ -287,6 +287,9 @@ h3 {
 .work-copy p {
   max-width: 68ch;
 }
+.work-copy > p + p:not(.work-note) {
+  margin-top: 12px;
+}
 .client-project {
   margin-top: 22px;
 }
@@ -348,23 +351,25 @@ h3 {
 }
 .project-list a {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   gap: 22px;
-  padding-block: 18px;
+  padding-block: 22px;
 }
 .project-info {
   display: flex;
   flex-direction: column;
-  gap: 3px;
+  gap: 7px;
   flex: 1;
+  min-width: 0;
 }
 .project-info strong {
   font-weight: 500;
   font-size: 14px;
 }
 .project-info > span {
+  max-width: 70ch;
   color: var(--muted);
-  font-size: 13px;
+  font-size: 14px;
 }
 .project-language {
   font-size: 12px;
@@ -617,7 +622,7 @@ html:lang(ja) body {
     font-size: 14px;
   }
   .project-info > span {
-    font-size: 12px;
+    font-size: 13px;
   }
   .skills-list {
     grid-template-columns: 1fr;
@@ -786,4 +791,54 @@ html:lang(ja) body {
   .rental-repository { margin-top: 12px; }
   .rental-overview { margin-top: 12px; }
   .rental-evidence { margin-top: 22px; }
+}
+
+.project-with-preview > a {
+  display: grid;
+  grid-template-columns: 300px minmax(0, 1fr);
+  align-items: start;
+  gap: 36px;
+  padding-block: 27px;
+}
+.project-with-preview .project-preview {
+  margin-top: 0;
+}
+.project-with-preview .project-info strong {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  font-size: 16px;
+}
+.project-with-preview .project-info strong .icon {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+}
+.project-with-preview .project-info > .project-language {
+  font-size: 12px;
+  margin-top: 4px;
+}
+.skills-list dd p + p {
+  margin-top: 12px;
+}
+@media (max-width: 900px) {
+  .project-with-preview > a {
+    grid-template-columns: 240px minmax(0, 1fr);
+    gap: 28px;
+  }
+}
+@media (max-width: 600px) {
+  .project-with-preview > a {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+  }
+  .project-with-preview .project-preview {
+    max-width: 460px;
+  }
+}
+
+.project-preview.brand-preview img {
+  aspect-ratio: 8 / 5;
+  object-fit: contain;
+  background: #fff;
 }

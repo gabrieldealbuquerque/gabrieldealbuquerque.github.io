@@ -26,3 +26,11 @@ Não foram atribuídas métricas de impacto, datas de início de trabalho, níve
 - Gráfico de aluguéis: comparação entre valores anunciados e previsões OOF reexecutadas em CPU para 3.283 imóveis em cinco folds, MAPE de 15,2233%. A tabela histórica do modelo registra 15,3080%; os resultados são identificados separadamente no repositório público.
 
 - Gráfico interativo: cópia do arquivo público `reports/oof-predictions.csv` de https://github.com/gabrieldealbuquerque/previsao-alugueis-grande-vitoria . Os filtros usam os mesmos 3.283 registros e recalculam as métricas do subconjunto exibido.
+
+- Prévia de eBPF: diagrama técnico redesenhado a partir da topologia salva na célula 5 (índice zero) de `mission_control_lab.ipynb` e do README do projeto. Representa a arquitetura; não é captura de uma nova execução nem evidência de métricas.
+- Prévia de redes neurais: gráfico histórico de MLP extraído de `Revisão Prova 2/backprop.ipynb`, célula 11 (índice zero), no commit `5170e67` do repositório público. Curvas e pontos preservados, com ajuste proporcional de tamanho e margens. Não houve novo treinamento.
+- Competências de IA ampliadas: embeddings e busca semântica conferidos no serviço RAG da Acctsy; OCR e extração estruturada no fluxo de documentos; scikit-learn, XGBoost, PyTorch e validação de modelos nos projetos acadêmicos. Fine-tuning permanece como área informada diretamente por Gabriel.
+- Prévia do desktop remoto: captura do cliente do projeto público no commit `616f17d`, recebendo a janela real do Chromium com o tutorial oficial do Python. Servidor e cliente executados em displays virtuais isolados, conectados por TCP em loopback; nenhum desktop pessoal foi capturado.
+
+- LiftUp: repositório público `gabrieldealbuquerque/liftup`, fork colaborativo do projeto original de `pedromendonca2/liftup`. Contribuições de Gabriel verificadas no histórico: organização de frontend/backend, execução local e diagrama. Apresentado como protótipo; a integração completa das telas de treino ainda está pendente. O logo vem de `frontend/assets/images/liftup-icon.jpg`, preservado sem alteração.
+- Curadoria: LiftUp substitui Dijkstra no portfólio por acrescentar contexto de desenvolvimento mobile e backend. O repositório Dijkstra não foi alterado.

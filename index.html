@@ -214,14 +214,19 @@
             </div>
             <div class="work-copy">
               <p data-i18n="acctsyDescription">
-                Desenvolvo um SaaS para escritórios de contabilidade, da
-                arquitetura e das APIs à interface e à infraestrutura. O
-                trabalho envolve processamento de documentos, análise
-                financeira, relatórios e integração com modelos de IA.
+                Como CTO da Acctsy, atuo no desenvolvimento de um SaaS para
+                escritórios de contabilidade, conectando a rotina dos
+                contadores ao atendimento de seus clientes. Meu trabalho vai
+                da arquitetura do backend e das APIs às interfaces web e à
+                infraestrutura, com Python, FastAPI, Next.js, PostgreSQL e
+                Docker.
               </p>
-              <p class="work-note" data-i18n="acctsyDetail">
-                Backend multi-tenant, processamento assíncrono, engenharia de
-                prompt e RAG.
+              <p data-i18n="acctsyDetail">
+                Entre as frentes do produto estão o processamento assíncrono
+                de documentos, a análise financeira e a geração de relatórios.
+                Integro modelos de IA a esses fluxos, com engenharia de prompt
+                e RAG, e trabalho no isolamento de dados entre escritórios,
+                nas permissões de acesso e na comunicação entre os módulos.
               </p>
             </div>
           </article>
@@ -255,9 +260,13 @@
             </div>
             <div class="work-copy">
               <p data-i18n="meridianDescription">
-                Iniciativa de desenvolvimento de software sob demanda, criada
-                por estudantes da UFES. Construímos soluções para clientes,
-                conectando suas necessidades ao desenvolvimento de produtos web.
+                Faço parte da Meridian, uma iniciativa de estudantes da UFES
+                voltada ao desenvolvimento de software sob demanda.
+                Trabalhamos com clientes para entender suas necessidades e
+                transformá-las em sites, sistemas e produtos web. Minha
+                atuação é no desenvolvimento full stack, em equipe, conectando
+                a interface às funcionalidades de backend. O TOV é um dos
+                projetos entregues por essa iniciativa.
               </p>
               <div class="inline-links">
                 <a
@@ -297,10 +306,9 @@
                   /></a>
                   <div>
                     <p data-i18n="tovDescription">
-                      Um dos projetos desenvolvidos em equipe pela Meridian:
-                      site institucional e painel próprio para publicação e
-                      gestão de artigos, aproximando o escritório de seus
-                      clientes.
+                      Site institucional e painel de gestão de artigos para um
+                      escritório de advocacia, desenvolvidos em equipe pela
+                      Meridian.
                     </p>
                     <p class="work-note" data-i18n="meridianDetail">
                       React e TypeScript, com backends Node.js ou PHP e
@@ -332,9 +340,12 @@
             </div>
             <div class="work-copy">
               <p data-i18n="gamelabDescription">
-                Participei da criação do jogo I LOVE EATING TRASH no Roblox,
-                contribuindo com o mapa, as mecânicas do jogo e o sistema de
-                spawn aleatório.
+                No UFES GameLab, participei do desenvolvimento em equipe de I
+                LOVE EATING TRASH, um jogo para Roblox. Contribuí para a
+                criação do mapa, a implementação das mecânicas e o mecanismo
+                de spawn aleatório. Trabalhei com Lua no Roblox Studio,
+                conectando a organização do cenário à lógica do jogo e ao
+                surgimento de elementos durante a partida.
               </p>
               <p class="work-note">Lua · Roblox Studio</p>
               <a
@@ -372,7 +383,16 @@
               </div>
               <a class="inline-link rental-repository" href="https://github.com/gabrieldealbuquerque/previsao-alugueis-grande-vitoria" target="_blank" rel="noopener noreferrer"><span data-i18n="rentRepository">Ver no GitHub</span><svg class="icon" aria-hidden="true"><use href="#external" /></svg></a>
             </div>
-            <p class="rental-overview" data-i18n="rentOverview">Estimativa de aluguéis residenciais com XGBoost, engenharia de atributos e comparação entre imóveis semelhantes. O gráfico mostra como as previsões se aproximam dos valores anunciados.</p>
+            <p class="rental-overview" data-i18n="rentOverview">
+              Projeto desenvolvido em equipe na disciplina de Inteligência
+              Artificial da UFES para estimar o aluguel mensal de casas e
+              apartamentos na Grande Vitória. O pipeline em Python combina
+              tratamento de dados, atributos como localização e área, XGBoost
+              e comparação com imóveis semelhantes. O repositório inclui o
+              modelo treinado, exemplos e uma ferramenta de previsão por CSV.
+              O gráfico apresenta as previsões de validação, separadas por
+              tipo de imóvel.
+            </p>
             <figure class="rental-evidence" data-rental-chart data-source="assets/data/rental-oof.csv">
               <div data-chart-fallback>
                 <img class="rental-static-chart" src="assets/previews/alugueis.png" width="1200" height="800" loading="lazy" decoding="async" data-i18n-alt="rentPreview" alt="Gráfico de aluguel real e previsto em validação cruzada" />
@@ -387,71 +407,128 @@
           </article>
           <ul class="project-list">
 
-            <li>
+            <li class="project-with-preview">
               <a
                 href="https://github.com/gabrieldealbuquerque/Deteccao-de-Deadlock-por-eBPF"
                 target="_blank"
                 rel="noopener noreferrer"
-                ><span class="project-info"
-                  ><strong data-i18n="ebpfTitle"
-                    >Detecção de deadlock com eBPF</strong
-                  ><span data-i18n="ebpfDescription"
-                    >Instrumentação de serviços TCP e recuperação da
-                    comunicação.</span
-                  ></span
-                ><span class="project-language">C / eBPF</span
-                ><svg class="icon" aria-hidden="true">
-                  <use href="#external" /></svg
-              ></a>
+              >
+                <span class="project-preview">
+                  <img
+                    src="assets/previews/ebpf.png"
+                    width="1200"
+                    height="750"
+                    loading="lazy"
+                    decoding="async"
+                    data-i18n-alt="ebpfPreview"
+                    alt="Diagrama da topologia TCP e do ciclo de espera entre três serviços monitorados por eBPF"
+                  />
+                </span>
+                <span class="project-info">
+                  <strong>
+                    <span data-i18n="ebpfTitle">Detecção de deadlock com eBPF</span>
+                    <svg class="icon" aria-hidden="true"><use href="#external" /></svg>
+                  </strong>
+                  <span data-i18n="ebpfDescription">
+                    Laboratório em C que reproduz um deadlock de comunicação
+                    entre três serviços TCP em containers Docker. A
+                    instrumentação com eBPF acompanha as relações de espera,
+                    identifica o ciclo e aciona a recuperação da comunicação
+                    sem reiniciar os processos. O projeto reúne programação de
+                    sistemas, redes e observabilidade no Linux.
+                  </span>
+                  <span class="project-language">C · eBPF · Docker</span>
+                </span>
+              </a>
             </li>
-            <li>
+            <li class="project-with-preview">
               <a
                 href="https://github.com/gabrieldealbuquerque/Remote-Desktop-via-Sockets-TCP"
                 target="_blank"
                 rel="noopener noreferrer"
-                ><span class="project-info"
-                  ><strong data-i18n="tcpTitle">Desktop remoto via TCP</strong
-                  ><span data-i18n="tcpDescription"
-                    >Transmissão de tela e controle de mouse e teclado por
-                    sockets.</span
-                  ></span
-                ><span class="project-language">Python</span
-                ><svg class="icon" aria-hidden="true">
-                  <use href="#external" /></svg
-              ></a>
+              >
+                <span class="project-preview">
+                  <img
+                    src="assets/previews/desktop-tcp.png"
+                    width="1200"
+                    height="750"
+                    loading="lazy"
+                    decoding="async"
+                    data-i18n-alt="tcpPreview"
+                    alt="Demonstração do cliente de desktop remoto exibindo uma tela transmitida por TCP"
+                  />
+                </span>
+                <span class="project-info">
+                  <strong>
+                    <span data-i18n="tcpTitle">Desktop remoto via TCP</span>
+                    <svg class="icon" aria-hidden="true"><use href="#external" /></svg>
+                  </strong>
+                  <span data-i18n="tcpDescription">
+                    Aplicação cliente-servidor em Python para transmitir a
+                    tela de um computador e controlá-lo por mouse e teclado.
+                    Usa sockets TCP, frames JPEG e mensagens de entrada em
+                    JSON, com delimitação explícita das mensagens e threads
+                    para separar vídeo e comandos. O projeto explora
+                    protocolos de comunicação, serialização e concorrência.
+                  </span>
+                  <span class="project-language">Python · TCP</span>
+                </span>
+              </a>
             </li>
-            <li>
+            <li class="project-with-preview">
               <a
                 href="https://github.com/gabrieldealbuquerque/Redes-Neurais"
                 target="_blank"
                 rel="noopener noreferrer"
-                ><span class="project-info"
-                  ><strong data-i18n="mlTitle">Redes neurais</strong
-                  ><span data-i18n="mlDescription"
-                    >Implementações de classificação, regressão e redes neurais
-                    com NumPy e PyTorch.</span
-                  ></span
-                ><span class="project-language">Python</span
-                ><svg class="icon" aria-hidden="true">
-                  <use href="#external" /></svg
-              ></a>
+              >
+                <span class="project-preview">
+                  <img
+                    src="assets/previews/redes-neurais.png"
+                    width="1200"
+                    height="750"
+                    loading="lazy"
+                    decoding="async"
+                    data-i18n-alt="mlPreview"
+                    alt="Gráfico do notebook de redes neurais comparando dados de treino, curva de referência e previsões de uma MLP"
+                  />
+                </span>
+                <span class="project-info">
+                  <strong>
+                    <span data-i18n="mlTitle">Redes neurais</span>
+                    <svg class="icon" aria-hidden="true"><use href="#external" /></svg>
+                  </strong>
+                  <span data-i18n="mlDescription">
+                    Coleção de notebooks da UFES que percorre os fundamentos
+                    das redes neurais: neurônio de McCulloch–Pitts,
+                    classificação, regressão linear, descida do gradiente e
+                    redes multicamadas. As implementações em NumPy e PyTorch
+                    incluem backpropagation e comparação entre gradientes
+                    calculados manualmente e por autograd, aproximando a
+                    matemática do código de treinamento.
+                  </span>
+                  <span class="project-language">NumPy · PyTorch</span>
+                </span>
+              </a>
             </li>
-            <li>
-              <a
-                href="https://github.com/gabrieldealbuquerque/Dijkstra_Vetor"
-                target="_blank"
-                rel="noopener noreferrer"
-                ><span class="project-info"
-                  ><strong data-i18n="dijkstraTitle"
-                    >Algoritmo de Dijkstra</strong
-                  ><span data-i18n="dijkstraDescription"
-                    >Implementação com vetor para encontrar caminhos mínimos em
-                    grafos.</span
-                  ></span
-                ><span class="project-language">C</span
-                ><svg class="icon" aria-hidden="true">
-                  <use href="#external" /></svg
-              ></a>
+            <li class="project-with-preview">
+              <a href="https://github.com/gabrieldealbuquerque/liftup" target="_blank" rel="noopener noreferrer">
+                <span class="project-preview brand-preview">
+                  <img src="assets/previews/liftup.jpg" width="1600" height="1600" loading="lazy" decoding="async" data-i18n-alt="liftupPreview" alt="Identidade visual do projeto LiftUp" />
+                </span>
+                <span class="project-info">
+                  <strong><span data-i18n="liftupTitle">LiftUp · Aplicativo de treinos</span><svg class="icon" aria-hidden="true"><use href="#external" /></svg></strong>
+                  <span data-i18n="liftupDescription">
+                    Protótipo colaborativo de aplicativo para organizar
+                    treinos, com React Native/Expo e API REST em
+                    Node.js/Express, PostgreSQL e Prisma. Contribuí para a
+                    organização do frontend e do backend, a configuração local
+                    e o diagrama do projeto. A API reúne autenticação e
+                    operações de treinos e exercícios; a integração das telas
+                    de treino segue em desenvolvimento.
+                  </span>
+                  <span class="project-language">React Native · Node.js · PostgreSQL</span>
+                </span>
+              </a>
             </li>
           </ul>
         </section>
@@ -470,9 +547,18 @@
             </div>
             <div>
               <dt data-i18n="aiLabel">Inteligência artificial</dt>
-              <dd data-i18n="aiSkills">
-                Integração com LLMs, engenharia de prompt, RAG, treinamento de
-                ML e fine-tuning.
+              <dd>
+                <p data-i18n="aiSkills">
+                  Integração de LLMs via APIs, engenharia de prompt, RAG,
+                  embeddings e busca semântica. Extração estruturada de
+                  documentos, OCR e pipelines de IA integrados a aplicações.
+                </p>
+                <p data-i18n="aiModelSkills">
+                  Machine learning com scikit-learn, XGBoost e PyTorch:
+                  preparação de dados, engenharia de atributos, classificação,
+                  regressão, redes neurais, validação cruzada, avaliação de
+                  modelos e fine-tuning.
+                </p>
               </dd>
             </div>
             <div>
