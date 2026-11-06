@@ -13,7 +13,7 @@ Conferidas em 5 de novembro de 2026.
 - Redes neurais: https://github.com/gabrieldealbuquerque/Redes-Neurais — diretórios e notebooks de regressão linear e gradiente.
 - Dijkstra: https://github.com/gabrieldealbuquerque/Dijkstra_Vetor — implementação em C com vetor.
 - Referência visual solicitada pelo titular: https://jhvlima.github.io/ . Inspiração leve na simplicidade e na hierarquia; implementação e conteúdo próprios.
-- Fontes: https://github.com/google/fonts/tree/main/ofl/manrope e https://github.com/google/fonts/tree/main/ofl/notosansjp . Arquivos locais em WOFF2 com licenças SIL OFL. Noto Sans JP contém um subconjunto dos caracteres usados na interface.
+- Fontes: https://github.com/google/fonts/tree/main/ofl/manrope e https://github.com/google/fonts/tree/main/ofl/notosansjp . Arquivos locais em WOFF2 com licenças SIL OFL. Noto Sans JP contém um subconjunto dos caracteres usados na interface e no currículo japonês.
 - Traduções: versões em inglês e japonês preparadas para este portfólio. O currículo em PDF permanece em português.
 
 Não foram atribuídas métricas de impacto, datas de início de trabalho, níveis de inglês, certificações ou autoria exclusiva não confirmados. Treinamento de ML e fine-tuning aparecem como áreas informadas pelo titular, sem inventar um case, um modelo ou um resultado.
@@ -38,3 +38,7 @@ Não foram atribuídas métricas de impacto, datas de início de trabalho, níve
 ## Segurança e infraestrutura
 
 Cloudflare foi confirmado por Gabriel. As competências de segurança refletem a arquitetura da Acctsy: Nginx, sessões criptografadas em cookies HttpOnly, autenticação JWT/OAuth 2.0, controle por papéis e permissões, isolamento multi-tenant, proteção de origem, rate limiting, validação de uploads e webhooks e auditoria. A descrição pública apresenta capacidades gerais, sem configuração interna, credenciais ou métricas de segurança. Pydantic, Alembic, Tailwind CSS e TanStack Query foram conferidos no projeto.
+
+## Currículos traduzidos
+
+As versões em inglês e japonês traduzem o conteúdo do currículo em português, preservando projetos, atribuições, formação e previsão de conclusão. Os três PDFs usam texto selecionável e links; a fonte japonesa é incorporada no documento exportado.

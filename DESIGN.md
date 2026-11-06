@@ -104,7 +104,7 @@ Até (900px), a coluna das experiências passa a (240px) e o projeto TOV empilha
 
 Prévias reais dos projetos ocupam a largura da coluna, preservando a proporção original e o conteúdo completo. O TOV permanece subordinado à Meridian. O projeto de aluguéis tem um bloco próprio com título, resultado na turma, gráfico interativo e acesso ao repositório e aos dados.
 
-O currículo usa Manrope em uma página A4, com corpo de 10,5 pt, texto mínimo de 10 pt, margens de 14 mm por 16 mm e separação clara entre experiências, projetos, competências e formação.
+Os currículos em português, inglês e japonês preservam a composição em uma página A4, com corpo de 10,5 pt, texto mínimo de 10 pt e margens de 14 mm por 16 mm. O japonês usa Noto Sans JP junto de Manrope, com entrelinha de (1.65). O download acompanha o idioma do site; os PDFs mantêm fundo branco para leitura e impressão em ambos os temas.
 
 ## Elevation & Depth
 

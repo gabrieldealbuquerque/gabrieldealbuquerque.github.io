@@ -117,7 +117,7 @@ const translations = {
     role: "Software Engineer · CTO at Acctsy",
     bio: "I work on backend systems, web applications and artificial intelligence. I enjoy understanding a problem, building a solution and seeing how it works in practice.",
     education: "Computer Science at UFES · expected graduation in late 2027.",
-    resume: "Résumé PDF (Portuguese)",
+    resume: "Résumé PDF",
     avatarAlt: "Gabriel's GitHub avatar",
     workTitle: "Experience & projects",
     acctsyRole: "CTO · current role",
@@ -206,7 +206,7 @@ const translations = {
     bio: "バックエンド、Webアプリケーション、AIの開発に取り組んでいます。課題を理解し、解決策を実装し、実際に使われるところまで関わることを大切にしています。",
     education:
       "エスピリトサント連邦大学（UFES）で計算機科学を専攻。2027年末に卒業予定。",
-    resume: "履歴書PDF（ポルトガル語）",
+    resume: "履歴書PDF",
     avatarAlt: "GabrielのGitHubアバター",
     workTitle: "経験・制作実績",
     acctsyRole: "CTO · 現職",
@@ -270,6 +270,11 @@ const translations = {
 };
 
 const locales = { pt: "pt-BR", en: "en", ja: "ja" };
+const resumeFiles = {
+  pt: "assets/Gabriel-de-Albuquerque-Curriculo.pdf",
+  en: "assets/Gabriel-de-Albuquerque-Resume-EN.pdf",
+  ja: "assets/Gabriel-de-Albuquerque-Resume-JA.pdf",
+};
 const ogLocales = { pt: "pt_BR", en: "en_US", ja: "ja_JP" };
 const languageButtons = [...document.querySelectorAll("[data-lang]")];
 const copyButton = document.querySelector(".copy-email");
@@ -313,6 +318,9 @@ function setLanguage(language, persist = false) {
   copyStatus.textContent = "";
   document.documentElement.lang = locales[language];
   document.title = strings.title;
+  const resumeLink = document.querySelector("[data-resume-download]");
+  resumeLink.href = resumeFiles[language];
+  resumeLink.hreflang = locales[language];
   updateThemeButton();
   document.querySelector('meta[name="description"]').content =
     strings.description;

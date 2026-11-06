@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <title>Gabriel de Albuquerque — Software Engineer</title>
+    <link rel="icon" href="assets/favicon.svg" />
+    <style>
+      @font-face {
+        font-family: Manrope;
+        src: url("assets/fonts/manrope.woff2");
+        font-weight: 200 800;
+        font-display: swap;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        background: #eef1ec;
+      }
+      body {
+        margin: 32px auto;
+        padding: 48px 54px;
+        max-width: 794px;
+        color: #252b28;
+        background: #fff;
+        font:
+          10.5pt/1.5 Manrope,
+          Arial,
+          sans-serif;
+      }
+      h1,
+      h2,
+      h3,
+      p {
+        margin: 0;
+      }
+      h1 {
+        font-size: 27pt;
+        font-weight: 650;
+        letter-spacing: -0.035em;
+        line-height: 1.2;
+      }
+      .headline {
+        color: #315f4a;
+        font-size: 12pt;
+        font-weight: 600;
+        margin-top: 8px;
+      }
+      .contact {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px 18px;
+        margin-top: 14px;
+        font-size: 10pt;
+        color: #48544c;
+      }
+      .email {
+        flex-basis: 100%;
+      }
+      a {
+        color: inherit;
+        text-decoration-color: #b3c3b8;
+        text-underline-offset: 3px;
+      }
+      a:hover {
+        color: #315f4a;
+      }
+      a:focus-visible {
+        outline: 2px solid #315f4a;
+        outline-offset: 4px;
+      }
+      ::selection {
+        background: #dce9de;
+      }
+      header {
+        border-bottom: 1px solid #d9e0d9;
+        padding-bottom: 19px;
+      }
+      section {
+        margin-top: 24px;
+      }
+      h2 {
+        font-size: 10pt;
+        line-height: 1.5;
+        font-weight: 700;
+        letter-spacing: 0.07em;
+        text-transform: uppercase;
+        color: #315f4a;
+        margin-bottom: 10px;
+      }
+      h3 {
+        font-size: 11pt;
+        font-weight: 700;
+        line-height: 1.4;
+      }
+      .entry + .entry {
+        margin-top: 18px;
+      }
+      .entry-header {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 16px;
+        margin-bottom: 5px;
+      }
+      .meta {
+        font-size: 10pt;
+        color: #536158;
+        white-space: nowrap;
+      }
+      ul {
+        padding-left: 16px;
+        margin: 5px 0 0;
+      }
+      li + li {
+        margin-top: 4px;
+      }
+      .skills {
+        display: grid;
+        grid-template-columns: 112px 1fr;
+        gap: 6px 16px;
+        margin: 0;
+        font-size: 10pt;
+      }
+      .skills dt {
+        font-weight: 650;
+      }
+      .skills dd {
+        margin: 0;
+      }
+      .education p {
+        margin-top: 4px;
+      }
+      .actions {
+        display: flex;
+        gap: 20px;
+        margin-top: 32px;
+        padding-top: 18px;
+        border-top: 1px solid #d9e0d9;
+        font-size: 10pt;
+      }
+      @media screen and (max-width: 600px) {
+        html {
+          background: #fff;
+        }
+        body {
+          margin: 0;
+          padding: 32px 22px;
+          font-size: 12pt;
+        }
+        h1 {
+          font-size: 24pt;
+        }
+        h3 {
+          font-size: 12pt;
+        }
+        .entry-header {
+          display: block;
+        }
+        .meta {
+          display: block;
+          margin-top: 3px;
+          white-space: normal;
+        }
+        .skills {
+          grid-template-columns: 1fr;
+          gap: 3px;
+          font-size: 12pt;
+        }
+        .skills dt:not(:first-child) {
+          margin-top: 7px;
+        }
+        .email {
+          overflow-wrap: anywhere;
+        }
+        section {
+          margin-top: 26px;
+        }
+      }
+      @page {
+        size: A4;
+        margin: 14mm 16mm;
+      }
+      @media print {
+        html {
+          background: #fff;
+        }
+        body {
+          padding: 0;
+          margin: 0;
+          max-width: none;
+        }
+        .actions {
+          display: none;
+        }
+        h2 {
+          break-after: avoid;
+        }
+        .entry,
+        .education,
+        .skills {
+          break-inside: avoid;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 lang="pt-BR">Gabriel de Albuquerque</h1>
+      <p class="headline">Software Engineer · CTO at Acctsy</p>
+      <nav class="contact" aria-label="Contact and professional profiles">
+        <a class="email" href="mailto:gabrieldealbuquerque1@gmail.com">gabrieldealbuquerque1@gmail.com</a>
+        <a href="https://github.com/gabrieldealbuquerque">GitHub</a>
+        <a href="https://www.linkedin.com/in/gabriel-de-albuquerque-santos-32b869294/">LinkedIn</a>
+        <a href="https://gabrieldealbuquerque.github.io/?lang=en">Portfolio</a>
+      </nav>
+    </header>
+    <main>
+      <section aria-labelledby="experience">
+        <h2 id="experience">Experience</h2>
+        <article class="entry">
+          <div class="entry-header">
+            <h3>Acctsy · CTO</h3>
+            <span class="meta">Current role</span>
+          </div>
+          <ul>
+            <li>Development of accounting SaaS, from architecture and APIs to interfaces and infrastructure, with multi-tenant isolation and asynchronous processing.</li>
+            <li>AI integration for document processing, financial analysis and reporting, using prompt engineering and RAG.</li>
+          </ul>
+        </article>
+        <article class="entry">
+          <div class="entry-header">
+            <h3><a href="https://www.meridianlab.com.br/">Meridian</a> · Full-stack development</h3>
+          </div>
+          <p>Custom software development for clients. For <a href="https://tov.adv.br/">TOV, a law firm</a>, contributed to the corporate website and the article publishing dashboard.</p>
+        </article>
+      </section>
+      <section aria-labelledby="projects">
+        <h2 id="projects">Selected projects</h2>
+        <article class="entry">
+          <div class="entry-header">
+            <h3><a href="https://github.com/gabrieldealbuquerque/previsao-alugueis-grande-vitoria">Rental price prediction in Greater Vitória</a></h3>
+            <span class="meta">Python · XGBoost</span>
+          </div>
+          <p>AI model combining feature engineering, property-grouped validation and adjustments based on comparable properties. <strong>Highest accuracy in the class in the final evaluation.</strong></p>
+        </article>
+        <article class="entry">
+          <div class="entry-header">
+            <h3><a href="https://github.com/gabrieldealbuquerque/Deteccao-de-Deadlock-por-eBPF">Deadlock detection with eBPF</a></h3>
+            <span class="meta">C · eBPF · Docker</span>
+          </div>
+          <p>Instrumentation of TCP services to detect wait cycles and recover communication without restarting processes.</p>
+        </article>
+        <article class="entry">
+          <div class="entry-header">
+            <h3>UFES GameLab</h3>
+            <span class="meta">Lua · Roblox Studio</span>
+          </div>
+          <p>Contributed to map creation, gameplay mechanics and the random spawn system for a game developed as a team.</p>
+        </article>
+      </section>
+      <section aria-labelledby="skills">
+        <h2 id="skills">Technologies and skills</h2>
+        <dl class="skills">
+          <dt>Backend & web</dt><dd>Python, FastAPI, Node.js, TypeScript, React, Next.js, PostgreSQL and Redis.</dd>
+          <dt>AI & ML</dt><dd>LLM integration, RAG, prompt engineering, model training, XGBoost and fine-tuning.</dd>
+          <dt>Infrastructure</dt><dd>Docker, Docker Compose, Linux, Git, Nginx and Coolify.</dd>
+        </dl>
+      </section>
+      <section class="education" aria-labelledby="education">
+        <h2 id="education">Education</h2>
+        <div class="entry-header">
+          <h3>Computer Science · UFES</h3>
+          <span class="meta">Expected graduation: late 2027</span>
+        </div>
+        <p>Federal University of Espírito Santo · Undergraduate degree in progress.</p>
+      </section>
+    </main>
+    <nav class="actions" aria-label="Résumé actions">
+      <a href="index.html?lang=en">Back to portfolio</a>
+      <a href="assets/Gabriel-de-Albuquerque-Resume-EN.pdf" download>Download PDF</a>
+    </nav>
+  </body>
+</html>

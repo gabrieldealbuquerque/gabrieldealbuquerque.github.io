@@ -12,7 +12,7 @@ Sem dependências de runtime ou etapa de build. Na pasta do projeto:
 python3 -m http.server 8765 --bind 127.0.0.1
 ```
 
-Abra http://localhost:8765. O conteúdo em português funciona sem JavaScript. A troca de idioma e a cópia de e-mail são melhorias opcionais. O currículo PDF permanece em português, com essa indicação nos outros idiomas.
+Abra http://localhost:8765. O conteúdo em português funciona sem JavaScript. A troca de idioma e a cópia de e-mail são melhorias opcionais. O download do currículo acompanha o idioma selecionado: português, inglês ou japonês. Sem JavaScript, o link padrão baixa a versão em português.
 
 O idioma selecionado é salvo localmente e pode ser compartilhado usando `?lang=pt`, `?lang=en` ou `?lang=ja`. A escolha na URL tem prioridade sobre a preferência salva.
 
@@ -23,7 +23,8 @@ O idioma selecionado é salvo localmente e pode ser compartilhado usando `?lang=
 - `script.js`: traduções, preferência de idioma e cópia de e-mail.
 - `rental-chart.js` e `rental-chart.css`: gráfico interativo de validação com filtros por tipo de imóvel.
 - `assets/data/rental-oof.csv`: 3.283 previsões anônimas de validação, sem anúncios, endereços ou identificadores.
-- `curriculo.html`: fonte do currículo; imprimir em A4, sem cabeçalhos ou rodapés do navegador, para atualizar `assets/Gabriel-de-Albuquerque-Curriculo.pdf`.
+- `curriculo.html`, `curriculo-en.html` e `curriculo-ja.html`: fontes dos currículos em português, inglês e japonês. Imprimir cada um em A4, sem cabeçalhos ou rodapés do navegador, após carregar as fontes locais.
+- `assets/Gabriel-de-Albuquerque-Curriculo.pdf`, `assets/Gabriel-de-Albuquerque-Resume-EN.pdf` e `assets/Gabriel-de-Albuquerque-Resume-JA.pdf`: PDFs correspondentes, selecionados por `resumeFiles` em `script.js`. Ao alterar o conteúdo, manter as três versões alinhadas e conferir a página A4 exportada.
 - `assets/`: fontes locais, avatar do GitHub, prévias dos projetos, currículo e imagem de compartilhamento.
 - `DESIGN.md`: decisões e tokens de design.
 
