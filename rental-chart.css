@@ -1,0 +1,240 @@
+.rental-evidence {
+  min-width: 0;
+}
+.rental-evidence [hidden] {
+  display: none !important;
+}
+.rental-chart {
+  --chart-ink: #252b28;
+  --chart-muted: #626b65;
+  --chart-accent: #315f4a;
+  --chart-grid: #e1e5df;
+  color: var(--chart-ink);
+  background: #fafbf9;
+  padding: clamp(16px, 3vw, 30px);
+  border: 1px solid var(--chart-grid);
+  border-radius: 3px;
+  font-size: 13px;
+}
+.rental-chart__controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px 20px;
+}
+.rental-chart__filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+.rental-chart__filter {
+  appearance: none;
+  min-height: 42px;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  padding: 8px 12px;
+  background: transparent;
+  color: var(--chart-muted);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+.rental-chart__filter:hover {
+  border-color: #b7c5bb;
+  color: var(--chart-accent);
+}
+.rental-chart__filter[aria-pressed="true"] {
+  background: var(--chart-accent);
+  color: #fafbf9;
+}
+.rental-chart__filter:focus-visible,
+.rental-chart__plot:focus-visible {
+  outline: 2px solid var(--chart-accent);
+  outline-offset: 4px;
+}
+.rental-chart__summary {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+.rental-chart__stage {
+  min-width: 0;
+  margin-top: 15px;
+}
+.rental-chart__plot {
+  display: block;
+  width: 100%;
+  max-width: none;
+  height: auto;
+  overflow: visible;
+  border-radius: 2px;
+  touch-action: pan-y;
+}
+.rental-chart__grid {
+  stroke: var(--chart-grid);
+  stroke-width: 1;
+}
+.rental-chart__tick {
+  fill: var(--chart-muted);
+  font:
+    11px Manrope,
+    "Noto Sans JP",
+    sans-serif;
+  font-variant-numeric: tabular-nums;
+}
+.rental-chart__axis-label {
+  fill: var(--chart-ink);
+  font:
+    12px Manrope,
+    "Noto Sans JP",
+    sans-serif;
+  font-weight: 600;
+}
+.rental-chart__identity {
+  stroke: #7b8580;
+  stroke-width: 1.25;
+  stroke-dasharray: 5 5;
+}
+.rental-chart__points {
+  stroke: none;
+  fill-opacity: 0.4;
+}
+.rental-chart__points--apartment {
+  fill: var(--chart-accent);
+}
+.rental-chart__points--house {
+  fill: #996a48;
+  fill-opacity: 0.55;
+}
+.rental-chart__selection {
+  fill: #fafbf9;
+  fill-opacity: 0.15;
+  stroke: var(--chart-ink);
+  stroke-width: 2;
+  pointer-events: none;
+}
+.rental-chart__legend {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 9px 20px;
+  margin-top: 4px;
+  color: var(--chart-muted);
+  font-size: 11px;
+}
+.rental-chart__legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+.rental-chart__legend-mark {
+  display: block;
+  flex: 0 0 auto;
+  width: 7px;
+  height: 7px;
+  background: var(--chart-accent);
+  border-radius: 50%;
+}
+.rental-chart__legend-item--house .rental-chart__legend-mark {
+  background: #996a48;
+  border-radius: 0;
+}
+.rental-chart__legend-item--identity .rental-chart__legend-mark {
+  width: 19px;
+  height: 0;
+  border-top: 1px dashed #7b8580;
+  background: transparent;
+  border-radius: 0;
+}
+.rental-chart__instructions {
+  margin: 16px 0 0;
+  color: var(--chart-muted);
+  line-height: 1.65;
+  font-size: 12px;
+  max-width: 85ch;
+}
+.rental-chart__readout {
+  margin-top: 16px;
+  padding: 15px 0;
+  border-top: 1px solid var(--chart-grid);
+  border-bottom: 1px solid var(--chart-grid);
+}
+.rental-chart__hint {
+  min-height: 20px;
+  margin: 0 0 10px;
+  color: var(--chart-muted);
+  font-size: 12px;
+  line-height: 1.65;
+}
+.rental-chart__values {
+  display: grid;
+  grid-template-columns: 1fr 1fr 0.8fr 0.7fr;
+  gap: 14px;
+  margin: 0;
+}
+.rental-chart__values > div {
+  min-width: 0;
+}
+.rental-chart__values dt {
+  margin: 0 0 5px;
+  color: var(--chart-muted);
+  font-size: 11px;
+  line-height: 1.5;
+}
+.rental-chart__values dd {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.5;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.rental-chart__note {
+  margin: 13px 0 0;
+  color: var(--chart-muted);
+  line-height: 1.7;
+  font-size: 11px;
+  max-width: 90ch;
+}
+.rental-chart__sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+.rental-chart ::selection {
+  color: #fafbf9;
+  background: var(--chart-accent);
+}
+@media (max-width: 600px) {
+  .rental-chart {
+    padding: 16px 12px;
+  }
+  .rental-chart__controls {
+    gap: 12px;
+  }
+  .rental-chart__filter {
+    padding: 8px 10px;
+    font-size: 12px;
+  }
+  .rental-chart__values {
+    grid-template-columns: 1fr 1fr;
+    gap: 14px 12px;
+  }
+  .rental-chart__hint {
+    min-height: 40px;
+  }
+  .rental-chart__values dd {
+    font-size: 12px;
+  }
+  .rental-chart__legend {
+    gap: 9px 13px;
+  }
+}

@@ -3,27 +3,31 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#f6f5ef" />
-    <title>Gabriel de Albuquerque — Software, produto e IA</title>
+    <meta name="theme-color" content="#fafbf9" />
+    <title>Gabriel de Albuquerque — Engenheiro de Software</title>
     <meta
       name="description"
-      content="Gabriel de Albuquerque, CTO na Acctsy e estudante de Ciência da Computação na UFES. Backend, full stack, inteligência artificial e projetos reais."
+      content="CTO na Acctsy e estudante de Ciência da Computação na UFES. Experiência em backend, full stack, inteligência artificial e desenvolvimento de jogos."
     />
     <link rel="canonical" href="https://gabrieldealbuquerque.github.io/" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="pt_BR" />
     <meta
       property="og:title"
-      content="Gabriel de Albuquerque — Software, produto e IA"
+      content="Gabriel de Albuquerque — Engenheiro de Software"
     />
     <meta
       property="og:description"
-      content="CTO na Acctsy. Ciência da Computação na UFES. Conheça meu trabalho, projetos e experiências."
+      content="CTO na Acctsy e estudante de Ciência da Computação na UFES. Experiência em backend, full stack, inteligência artificial e desenvolvimento de jogos."
     />
     <meta property="og:url" content="https://gabrieldealbuquerque.github.io/" />
     <meta
       property="og:image"
       content="https://gabrieldealbuquerque.github.io/assets/social.png"
+    />
+    <meta
+      property="og:image:alt"
+      content="Gabriel de Albuquerque — Software, Acctsy e UFES"
     />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
@@ -36,21 +40,17 @@
       type="font/woff2"
       crossorigin
     />
-    <link
-      rel="preload"
-      href="assets/fonts/instrument-serif-italic.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="rental-chart.css" />
     <script src="script.js" defer></script>
+    <script src="rental-chart.js" defer></script>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "Person",
         "name": "Gabriel de Albuquerque",
         "url": "https://gabrieldealbuquerque.github.io/",
+        "image": "https://gabrieldealbuquerque.github.io/assets/github-avatar.jpg",
         "jobTitle": "CTO",
         "worksFor": {
           "@type": "Organization",
@@ -66,576 +66,450 @@
     </script>
   </head>
   <body>
-    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+    <a class="skip-link" href="#conteudo" data-i18n="skip"
+      >Pular para o conteúdo</a
+    >
     <svg
       class="icon-library"
       xmlns="http://www.w3.org/2000/svg"
       aria-hidden="true"
     >
-      <symbol id="arrow-up-right" viewBox="0 0 24 24">
-        <path d="M5 19 19 5M5 5h14v14" />
-      </symbol>
-      <symbol id="arrow-down" viewBox="0 0 24 24">
-        <path d="M12 4v16m-6-6 6 6 6-6" />
-      </symbol>
-      <symbol id="plus" viewBox="0 0 24 24">
-        <path d="M12 5v14M5 12h14" />
+      <symbol id="external" viewBox="0 0 24 24">
+        <path d="M6 18 18 6M6 6h12v12" />
       </symbol>
       <symbol id="download" viewBox="0 0 24 24">
-        <path d="M12 3v12m-5-5 5 5 5-5M5 16v5h14v-5" />
+        <path d="M12 3v12m-5-5 5 5 5-5M5 17v4h14v-4" />
+      </symbol>
+      <symbol id="mail" viewBox="0 0 24 24">
+        <rect x="3" y="5" width="18" height="14" rx="2" />
+        <path d="m3 6 9 7 9-7" />
       </symbol>
     </svg>
-
-    <header class="header wrap">
-      <a
-        class="wordmark"
-        href="#inicio"
-        aria-label="Gabriel de Albuquerque, início"
-        >g<span class="mark-dot">a</span><span class="brand-period">.</span></a
-      >
-      <span class="header-note">Desenvolvimento<br />& tecnologia</span>
-      <nav aria-label="Navegação principal">
-        <a href="#projetos">Projetos</a>
-        <a href="#sobre">Sobre</a>
-        <a href="#contato"
-          >Contato <svg class="icon"><use href="#arrow-up-right" /></svg
-        ></a>
-      </nav>
-    </header>
-
-    <main id="conteudo">
-      <section class="hero wrap" id="inicio" aria-labelledby="nome">
-        <div class="hero-copy">
-          <h1 id="nome">Gabriel de<br /><em>Albuquerque.</em></h1>
-          <p class="hero-lead">
-            Backend, produto e<br />inteligência artificial.
-          </p>
-          <p class="hero-intro">
-            Sou estudante de Ciência da Computação na UFES e CTO na Acctsy.
-            Trabalho entre a arquitetura, o código e a operação de produtos
-            digitais.
-          </p>
-          <div class="hero-actions">
-            <a class="button" href="#projetos"
-              >Conheça meu trabalho
-              <svg class="icon"><use href="#arrow-down" /></svg
-            ></a>
-            <a
-              class="text-link"
-              href="assets/Gabriel-de-Albuquerque-Curriculo.pdf"
-              download
-              >Currículo em PDF <svg class="icon"><use href="#download" /></svg
-            ></a>
-          </div>
-        </div>
-        <div class="work-preview">
-          <div class="preview-top">
-            <span>Da ideia ao produto.</span
-            ><span class="preview-seal" aria-hidden="true"></span>
-          </div>
-          <a
-            class="preview-art"
-            id="preview-link"
-            href="#acctsy"
-            aria-label="Conhecer o projeto Acctsy"
+    <div class="page">
+      <header class="site-header">
+        <nav aria-label="Navegação principal" data-i18n-aria-label="navLabel">
+          <a href="#sobre" data-i18n="navAbout">Sobre</a
+          ><a href="#projetos" data-i18n="navWork">Projetos</a
+          ><a href="#contato" data-i18n="navContact">Contato</a>
+        </nav>
+        <div
+          class="languages"
+          role="group"
+          aria-label="Idioma"
+          data-i18n-aria-label="languageLabel"
+          hidden
+        >
+          <button
+            type="button"
+            lang="pt-BR"
+            data-lang="pt"
+            aria-label="Português"
+            aria-pressed="true"
           >
-            <img
-              id="preview-image"
-              src="assets/acctsy.jpg"
-              alt="Página pública da Acctsy, plataforma de inteligência financeira"
-              width="1440"
-              height="980"
-              fetchpriority="high"
-            />
-            <span class="preview-open"
-              ><svg class="icon"><use href="#arrow-up-right" /></svg
-            ></span>
-          </a>
-          <div class="preview-bottom">
-            <p>
-              <strong id="preview-name">Acctsy</strong
-              ><span id="preview-description"
-                >Tecnologia para a rotina contábil.</span
+            PT</button
+          ><button
+            type="button"
+            lang="en"
+            data-lang="en"
+            aria-label="English"
+            aria-pressed="false"
+          >
+            EN</button
+          ><button
+            type="button"
+            lang="ja"
+            data-lang="ja"
+            aria-label="日本語"
+            aria-pressed="false"
+          >
+            日本語
+          </button>
+        </div>
+      </header>
+      <main id="conteudo" tabindex="-1">
+        <section class="intro" id="sobre" aria-labelledby="nome">
+          <div class="intro-text">
+            <h1 id="nome" lang="pt-BR">
+              Gabriel de Albuquerque<span class="name-dot" aria-hidden="true"
+                >.</span
               >
+            </h1>
+            <p class="role" data-i18n="role">
+              Engenheiro de Software · CTO na Acctsy
             </p>
-            <span
-              class="preview-counter"
-              id="preview-counter"
-              aria-hidden="true"
-              >01 / 03</span
-            >
-          </div>
-          <div
-            class="project-selector"
-            role="group"
-            aria-label="Prévia dos projetos"
-            hidden
-          >
-            <button type="button" aria-pressed="true" data-project="acctsy">
-              Acctsy
-            </button>
-            <button type="button" aria-pressed="false" data-project="tov">
-              TOV
-            </button>
-            <button type="button" aria-pressed="false" data-project="meridian">
-              Meridian
-            </button>
-          </div>
-        </div>
-        <div class="hero-foot">
-          <span
-            ><span class="status-dot" aria-hidden="true"></span> Atualmente, CTO
-            na Acctsy</span
-          ><span>Ciência da Computação · UFES</span
-          ><a
-            href="https://github.com/gabrieldealbuquerque"
-            target="_blank"
-            rel="noopener noreferrer"
-            >GitHub <svg class="icon"><use href="#arrow-up-right" /></svg
-          ></a>
-        </div>
-      </section>
-
-      <section
-        class="projects wrap section"
-        id="projetos"
-        aria-labelledby="projects-heading"
-      >
-        <div class="section-heading">
-          <h2 id="projects-heading">
-            Trabalho que<br /><em>vira produto.</em>
-          </h2>
-          <p>
-            Da rotina de uma empresa aos detalhes de uma interface. Uma seleção
-            do que ajudo a construir.
-          </p>
-        </div>
-
-        <article class="project project-featured" id="acctsy">
-          <a
-            class="project-image acctsy-image"
-            href="https://www.acctsy.com.br/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Visitar o site da Acctsy"
-            ><img
-              src="assets/acctsy.jpg"
-              alt="Site público da Acctsy apresentando sua plataforma contábil"
-              width="1440"
-              height="980"
-              loading="lazy" /><span class="image-note"
-              >Acctsy · site público
-              <svg class="icon"><use href="#arrow-up-right" /></svg></span
-          ></a>
-          <div class="project-body">
-            <div class="project-title">
-              <h3>Acctsy</h3>
-              <span>CTO · atuação atual</span>
-            </div>
-            <p class="project-statement">
-              Transformar documentos contábeis em informação útil.
+            <p class="bio" data-i18n="bio">
+              Trabalho com backend, aplicações web e inteligência artificial.
+              Gosto de entender o problema, construir a solução e acompanhar seu
+              funcionamento na prática.
             </p>
-            <p>
-              Atuo no desenvolvimento de um SaaS para escritórios de
-              contabilidade, da arquitetura e das APIs à interface e à
-              infraestrutura. O produto reúne processamento de documentos,
-              análise financeira e integrações com inteligência artificial.
+            <p class="education" data-i18n="education">
+              Ciência da Computação na UFES · conclusão prevista para o final de
+              2027.
             </p>
-            <ul class="project-points">
-              <li>
-                Backend com isolamento por escritório e permissões de acesso.
-              </li>
-              <li>
-                Fluxos de extração, processamento assíncrono e geração de
-                relatórios.
-              </li>
-              <li>Integração de modelos de IA, engenharia de prompt e RAG.</li>
-            </ul>
-            <p class="tech-line">
-              Python / FastAPI / Next.js / React / PostgreSQL / Redis / Docker
-            </p>
-            <details>
-              <summary>
-                Por dentro da engenharia
-                <svg class="icon"><use href="#plus" /></svg>
-              </summary>
-              <div class="detail-content">
-                <p>
-                  A interface se comunica com o backend por uma camada BFF. O
-                  processamento usa filas persistentes, e o acesso aos dados
-                  considera o escritório, o cliente e as permissões de cada
-                  usuário.
-                </p>
-                <p>
-                  Minha atuação conecta desenvolvimento full stack, integração
-                  de IA e operação: autenticação, APIs, persistência,
-                  processamento de arquivos e implantação com Docker.
-                </p>
-              </div>
-            </details>
-            <a
-              class="text-link"
-              href="https://www.acctsy.com.br/"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Conhecer a Acctsy
-              <svg class="icon"><use href="#arrow-up-right" /></svg
-            ></a>
-          </div>
-        </article>
-
-        <div class="project-pair">
-          <article class="project" id="tov">
-            <a
-              class="project-image tov-image"
-              href="https://tov.adv.br/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Visitar o site TOV"
-              ><img
-                src="assets/tov.jpg"
-                alt="Página inicial do escritório Tristão de Oliveira e Valiatti"
-                width="1440"
-                height="900"
-                loading="lazy" /><span class="image-note"
-                >TOV · site público
-                <svg class="icon"><use href="#arrow-up-right" /></svg></span
-            ></a>
-            <div class="project-title">
-              <h3>TOV</h3>
-              <span>Full stack · Meridian</span>
-            </div>
-            <p class="project-statement">
-              Presença digital com autonomia para publicar.
-            </p>
-            <p>
-              Site institucional e gestão de conteúdo para o escritório Tristão
-              de Oliveira e Valiatti. Desenvolvido com Pedro Henrique, pela
-              Meridian, com páginas de serviços, artigos e um painel próprio de
-              publicação.
-            </p>
-            <p class="tech-line">React / TypeScript / Node.js / PHP / SQLite</p>
-            <details>
-              <summary>
-                Uma decisão de projeto
-                <svg class="icon"><use href="#plus" /></svg>
-              </summary>
-              <div class="detail-content">
-                <p>
-                  O mesmo frontend atende dois ambientes: backend Node.js para
-                  desenvolvimento e VPS, ou PHP para hospedagem compartilhada. O
-                  contrato da API é preservado entre eles.
-                </p>
-                <p>
-                  O CMS inclui sessões com cookies HttpOnly, proteção CSRF e
-                  sanitização de conteúdo. Metadados por página, sitemap e RSS
-                  fazem parte da publicação dos artigos.
-                </p>
-              </div>
-            </details>
-            <a
-              class="text-link"
-              href="https://tov.adv.br/"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Visitar o TOV
-              <svg class="icon"><use href="#arrow-up-right" /></svg
-            ></a>
-          </article>
-          <article class="project" id="meridian">
-            <a
-              class="project-image meridian-image"
-              href="https://www.meridianlab.com.br/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Visitar a Meridian"
-              ><img
-                src="assets/meridian.jpg"
-                alt="Site da Meridian, grupo de desenvolvimento de sites e sistemas"
-                width="1440"
-                height="980"
-                loading="lazy" /><span class="image-note"
-                >Meridian · site público
-                <svg class="icon"><use href="#arrow-up-right" /></svg></span
-            ></a>
-            <div class="project-title">
-              <h3>Meridian</h3>
-              <span>Desenvolvimento em equipe</span>
-            </div>
-            <p class="project-statement">
-              Construir junto, do primeiro contato à entrega.
-            </p>
-            <p>
-              Participo de um grupo independente de tecnologia formado por
-              estudantes da UFES. Desenvolvemos sites, sistemas e automações
-              para negócios, com contato direto entre quem precisa da solução e
-              quem a desenvolve.
-            </p>
-            <p class="tech-line">
-              Astro / TypeScript / Interfaces web / Integrações
-            </p>
-            <details>
-              <summary>
-                Da colaboração à entrega
-                <svg class="icon"><use href="#plus" /></svg>
-              </summary>
-              <div class="detail-content">
-                <p>
-                  A Meridian é um espaço de colaboração e aplicação prática do
-                  que estudamos. O projeto do TOV é uma dessas entregas,
-                  desenvolvido em conjunto com Pedro Henrique.
-                </p>
-                <p>
-                  O site do grupo usa Astro e TypeScript. A Meridian é uma
-                  iniciativa independente, sem vínculo institucional com a UFES.
-                </p>
-              </div>
-            </details>
-            <a
-              class="text-link"
-              href="https://www.meridianlab.com.br/"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Conhecer a Meridian
-              <svg class="icon"><use href="#arrow-up-right" /></svg
-            ></a>
-          </article>
-        </div>
-      </section>
-
-      <section
-        class="skills-section"
-        id="competencias"
-        aria-labelledby="skills-heading"
-      >
-        <div class="wrap skills-layout">
-          <div class="skills-intro">
-            <h2 id="skills-heading">
-              Da arquitetura<br /><em>à última linha.</em>
-            </h2>
-            <p>
-              As áreas e ferramentas que conecto no desenvolvimento de software.
-            </p>
-            <a
-              class="text-link"
-              href="assets/Gabriel-de-Albuquerque-Curriculo.pdf"
-              download
-              >Baixar currículo <svg class="icon"><use href="#download" /></svg
-            ></a>
-          </div>
-          <dl class="skills-list">
-            <div>
-              <dt>Backend & arquitetura</dt>
-              <dd>
-                Python, FastAPI, Node.js, APIs REST, PostgreSQL, SQLAlchemy,
-                Redis, autenticação e sistemas multi-tenant.
-              </dd>
-            </div>
-            <div>
-              <dt>Desenvolvimento full stack</dt>
-              <dd>
-                TypeScript, React, Next.js, Astro, HTML e CSS. Interfaces
-                conectadas às regras de negócio e às APIs.
-              </dd>
-            </div>
-            <div>
-              <dt>Inteligência artificial & ML</dt>
-              <dd>
-                Integração com LLMs, engenharia de prompt, RAG, treinamento de
-                modelos de machine learning e fine-tuning.
-              </dd>
-            </div>
-            <div>
-              <dt>Infraestrutura & operação</dt>
-              <dd>
-                Docker, Docker Compose, Linux, Git, Nginx e implantação com
-                Coolify. Processamento assíncrono e serviços persistentes.
-              </dd>
-            </div>
-          </dl>
-        </div>
-      </section>
-
-      <section class="academic wrap section" aria-labelledby="academic-heading">
-        <div class="section-heading">
-          <h2 id="academic-heading">Fundamentos,<br /><em>na prática.</em></h2>
-          <div>
-            <p>
-              Projetos acadêmicos para investigar como as coisas funcionam por
-              dentro.
-            </p>
-            <a
-              class="text-link"
-              href="https://github.com/gabrieldealbuquerque?tab=repositories"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Todos os repositórios
-              <svg class="icon"><use href="#arrow-up-right" /></svg
-            ></a>
-          </div>
-        </div>
-        <div class="academic-list">
-          <a
-            class="academic-project"
-            href="https://github.com/gabrieldealbuquerque/Deteccao-de-Deadlock-por-eBPF"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><div>
-              <h3>Quando três serviços<br />param de se responder.</h3>
-              <span>Sistemas operacionais · C / eBPF / Docker</span>
-            </div>
-            <p>
-              Laboratório de deadlock entre serviços TCP. Instrumentação com
-              eBPF para detectar o ciclo de espera e recuperar a comunicação sem
-              reiniciar os processos.
-            </p>
-            <svg class="icon"><use href="#arrow-up-right" /></svg
-          ></a>
-          <a
-            class="academic-project"
-            href="https://github.com/gabrieldealbuquerque/Remote-Desktop-via-Sockets-TCP"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><div>
-              <h3>Acesso remoto,<br />dos sockets à tela.</h3>
-              <span>Redes de computadores · Python / TCP</span>
-            </div>
-            <p>
-              Projeto educacional de desktop remoto com transmissão de tela,
-              controle de mouse e teclado e protocolo próprio de framing sobre
-              sockets TCP.
-            </p>
-            <svg class="icon"><use href="#arrow-up-right" /></svg
-          ></a>
-          <a
-            class="academic-project"
-            href="https://github.com/gabrieldealbuquerque/Redes-Neurais"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><div>
-              <h3>Aprendizado de máquina,<br />desde os fundamentos.</h3>
-              <span>Redes neurais · Python / Jupyter</span>
-            </div>
-            <p>
-              Exercícios e experimentos da disciplina de Redes Neurais,
-              incluindo regressão linear e métodos de gradiente em notebooks.
-            </p>
-            <svg class="icon"><use href="#arrow-up-right" /></svg
-          ></a>
-          <a
-            class="academic-project"
-            href="https://github.com/gabrieldealbuquerque/Dijkstra_Vetor"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><div>
-              <h3>O caminho mais curto<br />também é uma escolha.</h3>
-              <span>Algoritmos e estruturas de dados · C</span>
-            </div>
-            <p>
-              Implementação do algoritmo de Dijkstra com vetor. Uma aplicação
-              direta de grafos, caminhos mínimos e análise de complexidade.
-            </p>
-            <svg class="icon"><use href="#arrow-up-right" /></svg
-          ></a>
-        </div>
-      </section>
-
-      <section
-        class="about wrap section"
-        id="sobre"
-        aria-labelledby="about-heading"
-      >
-        <div class="about-heading">
-          <h2 id="about-heading">
-            Ainda curioso.<br /><em>Sempre construindo.</em>
-          </h2>
-          <figure>
-            <img
-              src="assets/gabriel.jpeg"
-              alt="Gabriel de Albuquerque"
-              width="200"
-              height="200"
-              loading="lazy"
-            />
-            <figcaption>Gabriel de Albuquerque</figcaption>
-          </figure>
-        </div>
-        <div class="about-copy">
-          <p class="about-lead">
-            Gosto de entender o problema inteiro — e de acompanhar o software
-            depois que ele sai do meu computador.
-          </p>
-          <p>
-            Na Acctsy, isso significa transitar entre backend, interface,
-            inteligência artificial e infraestrutura. Na Meridian, significa
-            colaborar com outras pessoas para transformar necessidades de
-            negócios em projetos entregues.
-          </p>
-          <p>
-            A graduação em Ciência da Computação na UFES é a base desse
-            trabalho: algoritmos, redes, sistemas operacionais e aprendizado de
-            máquina encontram aplicação nos projetos que desenvolvo.
-          </p>
-          <div class="education">
-            <div>
-              <strong>Ciência da Computação</strong
-              ><span>Universidade Federal do Espírito Santo</span>
-            </div>
-            <span>Conclusão prevista<br /><strong>Final de 2027</strong></span>
-          </div>
-        </div>
-      </section>
-
-      <section class="contact" id="contato" aria-labelledby="contact-heading">
-        <div class="wrap">
-          <div class="contact-top">
-            <h2 id="contact-heading">
-              Uma boa conversa<br /><em>é um bom começo.</em>
-            </h2>
-            <p>Para falar sobre tecnologia,<br />projetos ou oportunidades.</p>
-          </div>
-          <a class="email-link" href="mailto:gabrieldealbuquerque1@gmail.com"
-            >gabrieldealbuquerque1@gmail.com
-            <svg class="icon"><use href="#arrow-up-right" /></svg
-          ></a>
-          <div class="contact-bottom">
-            <div class="contact-links">
+            <div class="profile-links">
               <a
                 href="https://github.com/gabrieldealbuquerque"
                 target="_blank"
                 rel="noopener noreferrer"
                 >GitHub
-                <svg class="icon"><use href="#arrow-up-right" /></svg></a
+                <svg class="icon" aria-hidden="true">
+                  <use href="#external" /></svg></a
               ><a
                 href="https://www.linkedin.com/in/gabriel-de-albuquerque-santos-32b869294/"
                 target="_blank"
                 rel="noopener noreferrer"
                 >LinkedIn
-                <svg class="icon"><use href="#arrow-up-right" /></svg></a
+                <svg class="icon" aria-hidden="true">
+                  <use href="#external" /></svg></a
               ><a href="assets/Gabriel-de-Albuquerque-Curriculo.pdf" download
-                >Currículo <svg class="icon"><use href="#download" /></svg
+                ><span data-i18n="resume">Currículo em PDF</span>
+                <svg class="icon" aria-hidden="true">
+                  <use href="#download" /></svg
               ></a>
             </div>
-            <button class="copy-email" type="button" hidden>
-              Copiar e-mail</button
-            ><span
-              class="sr-only"
-              id="copy-status"
-              role="status"
-              aria-live="polite"
-            ></span>
           </div>
-        </div>
-      </section>
-    </main>
-    <footer class="footer wrap">
-      <span
-        >Gabriel de Albuquerque <span aria-hidden="true">©</span>
-        <span id="year">2026</span></span
-      ><span>Feito com intenção. Em constante construção.</span
-      ><a href="#inicio"
-        >Voltar ao início <svg class="icon"><use href="#arrow-up-right" /></svg
-      ></a>
-    </footer>
+          <img
+            class="avatar"
+            src="assets/github-avatar.jpg"
+            width="282"
+            height="282"
+            alt="Avatar de Gabriel no GitHub"
+            data-i18n-alt="avatarAlt"
+            fetchpriority="high"
+          />
+        </section>
+        <section
+          class="section work"
+          id="projetos"
+          aria-labelledby="work-title"
+        >
+          <h2 id="work-title" data-i18n="workTitle">Experiência e projetos</h2>
+          <article class="work-row">
+            <div class="work-heading">
+              <h3>
+                <a
+                  href="https://www.acctsy.com.br/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Acctsy
+                  <svg class="icon" aria-hidden="true">
+                    <use href="#external" /></svg
+                ></a>
+              </h3>
+              <p data-i18n="acctsyRole">CTO · atuação atual</p>
+              <a
+                class="project-preview"
+                href="https://www.acctsy.com.br/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  src="assets/previews/acctsy.jpg"
+                  width="1280"
+                  height="800"
+                  loading="lazy"
+                  decoding="async"
+                  data-i18n-alt="acctsyPreview"
+                  alt="Prévia de Acctsy"
+              /></a>
+            </div>
+            <div class="work-copy">
+              <p data-i18n="acctsyDescription">
+                Desenvolvo um SaaS para escritórios de contabilidade, da
+                arquitetura e das APIs à interface e à infraestrutura. O
+                trabalho envolve processamento de documentos, análise
+                financeira, relatórios e integração com modelos de IA.
+              </p>
+              <p class="work-note" data-i18n="acctsyDetail">
+                Backend multi-tenant, processamento assíncrono, engenharia de
+                prompt e RAG.
+              </p>
+            </div>
+          </article>
+          <article class="work-row">
+            <div class="work-heading">
+              <h3>
+                <a
+                  href="https://www.meridianlab.com.br/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Meridian
+                  <svg class="icon" aria-hidden="true">
+                    <use href="#external" /></svg
+                ></a>
+              </h3>
+              <p data-i18n="meridianRole">Software para clientes</p>
+              <a
+                class="project-preview"
+                href="https://www.meridianlab.com.br/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  src="assets/previews/meridian.jpg"
+                  width="1280"
+                  height="800"
+                  loading="lazy"
+                  decoding="async"
+                  data-i18n-alt="meridianPreview"
+                  alt="Prévia de Meridian"
+              /></a>
+            </div>
+            <div class="work-copy">
+              <p data-i18n="meridianDescription">
+                Iniciativa de desenvolvimento de software sob demanda, criada
+                por estudantes da UFES. Construímos soluções para clientes,
+                conectando suas necessidades ao desenvolvimento de produtos web.
+              </p>
+              <div class="inline-links">
+                <a
+                  href="https://www.linkedin.com/feed/update/urn:li:activity:7502440484875907072/?actorCompanyId=135104212"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><span data-i18n="meridianLinkedin">Meridian no LinkedIn</span
+                  ><svg class="icon" aria-hidden="true">
+                    <use href="#external" /></svg
+                ></a>
+              </div>
+              <div class="client-project">
+                <h4>
+                  <a
+                    href="https://tov.adv.br/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><span data-i18n="tovTitle">TOV · Escritório de advocacia</span>
+                    <svg class="icon" aria-hidden="true">
+                      <use href="#external" /></svg
+                  ></a>
+                </h4>
+                <div class="client-layout">
+                  <a
+                    class="project-preview"
+                    href="https://tov.adv.br/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><img
+                      src="assets/previews/tov.jpg"
+                      width="1280"
+                      height="800"
+                      loading="lazy"
+                      decoding="async"
+                      data-i18n-alt="tovPreview"
+                      alt="Prévia do site do TOV"
+                  /></a>
+                  <div>
+                    <p data-i18n="tovDescription">
+                      Um dos projetos desenvolvidos em equipe pela Meridian:
+                      site institucional e painel próprio para publicação e
+                      gestão de artigos, aproximando o escritório de seus
+                      clientes.
+                    </p>
+                    <p class="work-note" data-i18n="meridianDetail">
+                      React e TypeScript, com backends Node.js ou PHP e
+                      persistência em SQLite.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="work-row">
+            <div class="work-heading">
+              <h3>UFES GameLab</h3>
+              <p data-i18n="gamelabRole">Desenvolvimento de jogos</p>
+              <a
+                class="project-preview"
+                href="https://www.roblox.com/pt/games/123797405972371/I-LOVE-EATING-TRASH"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  src="assets/previews/gamelab.jpg"
+                  width="768"
+                  height="432"
+                  loading="lazy"
+                  decoding="async"
+                  data-i18n-alt="gamelabPreview"
+                  alt="Prévia de UFES GameLab"
+              /></a>
+            </div>
+            <div class="work-copy">
+              <p data-i18n="gamelabDescription">
+                Participei da criação do jogo I LOVE EATING TRASH no Roblox,
+                contribuindo com o mapa, as mecânicas do jogo e o sistema de
+                spawn aleatório.
+              </p>
+              <p class="work-note">Lua · Roblox Studio</p>
+              <a
+                class="inline-link"
+                href="https://www.roblox.com/pt/games/123797405972371/I-LOVE-EATING-TRASH"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-game-link
+                ><span data-i18n="gameLink">Conhecer o jogo</span>
+                <svg class="icon" aria-hidden="true">
+                  <use href="#external" /></svg
+              ></a>
+            </div>
+          </article>
+        </section>
+        <section class="section academic" aria-labelledby="academic-title">
+          <div class="section-heading">
+            <h2 id="academic-title" data-i18n="academicTitle">
+              Projetos acadêmicos
+            </h2>
+            <a
+              href="https://github.com/gabrieldealbuquerque?tab=repositories"
+              class="all-projects"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><span data-i18n="allProjects">Todos no GitHub</span>
+              <svg class="icon" aria-hidden="true"><use href="#external" /></svg
+            ></a>
+          </div>
+          <article class="rental-feature" aria-labelledby="rental-title">
+            <div class="rental-feature-heading">
+              <div>
+                <h3 id="rental-title" data-i18n="rentTitle">Previsão de aluguéis na Grande Vitória</h3>
+                <p class="rental-recognition" data-i18n="rentRecognition">Melhor precisão da turma na avaliação final de Inteligência Artificial · UFES</p>
+              </div>
+              <a class="inline-link rental-repository" href="https://github.com/gabrieldealbuquerque/previsao-alugueis-grande-vitoria" target="_blank" rel="noopener noreferrer"><span data-i18n="rentRepository">Ver no GitHub</span><svg class="icon" aria-hidden="true"><use href="#external" /></svg></a>
+            </div>
+            <p class="rental-overview" data-i18n="rentOverview">Estimativa de aluguéis residenciais com XGBoost, engenharia de atributos e comparação entre imóveis semelhantes. O gráfico mostra como as previsões se aproximam dos valores anunciados.</p>
+            <figure class="rental-evidence" data-rental-chart data-source="assets/data/rental-oof.csv">
+              <div data-chart-fallback>
+                <img class="rental-static-chart" src="assets/previews/alugueis.png" width="1200" height="800" loading="lazy" decoding="async" data-i18n-alt="rentPreview" alt="Gráfico de aluguel real e previsto em validação cruzada" />
+              </div>
+              <div data-chart-interactive hidden></div>
+              <figcaption class="rental-method" data-i18n="rentMethod">Validação cruzada em cinco grupos: cada imóvel foi avaliado por um modelo treinado nos outros grupos.</figcaption>
+            </figure>
+            <div class="rental-resources">
+              <a href="assets/data/rental-oof.csv" download data-i18n="rentData">Dados da validação (CSV)</a>
+              <a href="https://github.com/gabrieldealbuquerque/previsao-alugueis-grande-vitoria/blob/main/docs/modelo.md" target="_blank" rel="noopener noreferrer"><span data-i18n="rentMethodLink">Como o modelo funciona</span><svg class="icon" aria-hidden="true"><use href="#external" /></svg></a>
+            </div>
+          </article>
+          <ul class="project-list">
+
+            <li>
+              <a
+                href="https://github.com/gabrieldealbuquerque/Deteccao-de-Deadlock-por-eBPF"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><span class="project-info"
+                  ><strong data-i18n="ebpfTitle"
+                    >Detecção de deadlock com eBPF</strong
+                  ><span data-i18n="ebpfDescription"
+                    >Instrumentação de serviços TCP e recuperação da
+                    comunicação.</span
+                  ></span
+                ><span class="project-language">C / eBPF</span
+                ><svg class="icon" aria-hidden="true">
+                  <use href="#external" /></svg
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/gabrieldealbuquerque/Remote-Desktop-via-Sockets-TCP"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><span class="project-info"
+                  ><strong data-i18n="tcpTitle">Desktop remoto via TCP</strong
+                  ><span data-i18n="tcpDescription"
+                    >Transmissão de tela e controle de mouse e teclado por
+                    sockets.</span
+                  ></span
+                ><span class="project-language">Python</span
+                ><svg class="icon" aria-hidden="true">
+                  <use href="#external" /></svg
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/gabrieldealbuquerque/Redes-Neurais"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><span class="project-info"
+                  ><strong data-i18n="mlTitle">Redes neurais</strong
+                  ><span data-i18n="mlDescription"
+                    >Implementações de classificação, regressão e redes neurais
+                    com NumPy e PyTorch.</span
+                  ></span
+                ><span class="project-language">Python</span
+                ><svg class="icon" aria-hidden="true">
+                  <use href="#external" /></svg
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/gabrieldealbuquerque/Dijkstra_Vetor"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><span class="project-info"
+                  ><strong data-i18n="dijkstraTitle"
+                    >Algoritmo de Dijkstra</strong
+                  ><span data-i18n="dijkstraDescription"
+                    >Implementação com vetor para encontrar caminhos mínimos em
+                    grafos.</span
+                  ></span
+                ><span class="project-language">C</span
+                ><svg class="icon" aria-hidden="true">
+                  <use href="#external" /></svg
+              ></a>
+            </li>
+          </ul>
+        </section>
+        <section class="section skills" aria-labelledby="skills-title">
+          <h2 id="skills-title" data-i18n="skillsTitle">
+            Tecnologias e áreas de atuação
+          </h2>
+          <dl class="skills-list">
+            <div>
+              <dt data-i18n="backendLabel">Backend</dt>
+              <dd>Python, FastAPI, Node.js, PostgreSQL, SQLAlchemy, Redis.</dd>
+            </div>
+            <div>
+              <dt data-i18n="frontendLabel">Frontend</dt>
+              <dd>TypeScript, React, Next.js, Astro, HTML, CSS.</dd>
+            </div>
+            <div>
+              <dt data-i18n="aiLabel">Inteligência artificial</dt>
+              <dd data-i18n="aiSkills">
+                Integração com LLMs, engenharia de prompt, RAG, treinamento de
+                ML e fine-tuning.
+              </dd>
+            </div>
+            <div>
+              <dt data-i18n="infraLabel">Infraestrutura</dt>
+              <dd>Docker, Docker Compose, Linux, Git, Nginx, Coolify.</dd>
+            </div>
+          </dl>
+        </section>
+        <section
+          class="section contact"
+          id="contato"
+          aria-labelledby="contact-title"
+        >
+          <h2 id="contact-title" data-i18n="contactTitle">Contato</h2>
+          <p data-i18n="contactDescription">
+            Para conversar sobre projetos, tecnologia ou oportunidades.
+          </p>
+          <div class="contact-actions">
+            <a class="email" href="mailto:gabrieldealbuquerque1@gmail.com"
+              ><svg class="icon" aria-hidden="true"><use href="#mail" /></svg
+              ><span>gabrieldealbuquerque1@gmail.com</span></a
+            ><button
+              type="button"
+              class="copy-email"
+              hidden
+              data-i18n="copyEmail"
+            >
+              Copiar e-mail
+            </button>
+          </div>
+          <p class="copy-status" role="status" aria-live="polite"></p>
+        </section>
+      </main>
+      <footer>
+        <span>© <span id="year">2026</span> Gabriel de Albuquerque</span
+        ><a href="#sobre" data-i18n="backTop">Voltar ao início</a>
+      </footer>
+    </div>
   </body>
 </html>

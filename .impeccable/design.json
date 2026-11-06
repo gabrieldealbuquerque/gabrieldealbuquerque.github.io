@@ -1,341 +1,228 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-05T13:48:00.083027+00:00",
+  "generatedAt": "2026-11-06T00:17:46.279925+00:00",
   "title": "Design System: Gabriel de Albuquerque",
   "extensions": {
     "colorMeta": {
-      "paper": {
-        "role": "neutral",
-        "displayName": "Papel quente",
+      "accent": {
+        "role": "primary",
+        "displayName": "Verde",
         "tonalRamp": [
-          "oklch(15% 0.00801 98.879)",
-          "oklch(26.43% 0.00801 98.879)",
-          "oklch(37.86% 0.00801 98.879)",
-          "oklch(49.29% 0.00801 98.879)",
-          "oklch(60.71% 0.00801 98.879)",
-          "oklch(72.14% 0.00801 98.879)",
-          "oklch(83.57% 0.00801 98.879)",
-          "oklch(95% 0.00801 98.879)"
+          "oklch(15.00% 0.0621 162.70)",
+          "oklch(26.43% 0.0621 162.70)",
+          "oklch(37.86% 0.0621 162.70)",
+          "oklch(49.29% 0.0621 162.70)",
+          "oklch(60.71% 0.0621 162.70)",
+          "oklch(72.14% 0.0621 162.70)",
+          "oklch(83.57% 0.0621 162.70)",
+          "oklch(95.00% 0.0621 162.70)"
         ]
       },
-      "ink": {
+      "background": {
         "role": "neutral",
-        "displayName": "Tinta carvão",
+        "displayName": "Fundo claro",
         "tonalRamp": [
-          "oklch(15% 0.01003 132.640)",
-          "oklch(26.43% 0.01003 132.640)",
-          "oklch(37.86% 0.01003 132.640)",
-          "oklch(49.29% 0.01003 132.640)",
-          "oklch(60.71% 0.01003 132.640)",
-          "oklch(72.14% 0.01003 132.640)",
-          "oklch(83.57% 0.01003 132.640)",
-          "oklch(95% 0.01003 132.640)"
+          "oklch(15.00% 0.0028 128.49)",
+          "oklch(26.43% 0.0028 128.49)",
+          "oklch(37.86% 0.0028 128.49)",
+          "oklch(49.29% 0.0028 128.49)",
+          "oklch(60.71% 0.0028 128.49)",
+          "oklch(72.14% 0.0028 128.49)",
+          "oklch(83.57% 0.0028 128.49)",
+          "oklch(95.00% 0.0028 128.49)"
+        ]
+      },
+      "text": {
+        "role": "neutral",
+        "displayName": "Texto escuro",
+        "tonalRamp": [
+          "oklch(15.00% 0.0101 164.17)",
+          "oklch(26.43% 0.0101 164.17)",
+          "oklch(37.86% 0.0101 164.17)",
+          "oklch(49.29% 0.0101 164.17)",
+          "oklch(60.71% 0.0101 164.17)",
+          "oklch(72.14% 0.0101 164.17)",
+          "oklch(83.57% 0.0101 164.17)",
+          "oklch(95.00% 0.0101 164.17)"
         ]
       },
       "muted": {
         "role": "neutral",
-        "displayName": "Cinza oliva",
+        "displayName": "Texto secundário",
         "tonalRamp": [
-          "oklch(15% 0.01731 119.421)",
-          "oklch(26.43% 0.01731 119.421)",
-          "oklch(37.86% 0.01731 119.421)",
-          "oklch(49.29% 0.01731 119.421)",
-          "oklch(60.71% 0.01731 119.421)",
-          "oklch(72.14% 0.01731 119.421)",
-          "oklch(83.57% 0.01731 119.421)",
-          "oklch(95% 0.01731 119.421)"
+          "oklch(15.00% 0.0144 156.69)",
+          "oklch(26.43% 0.0144 156.69)",
+          "oklch(37.86% 0.0144 156.69)",
+          "oklch(49.29% 0.0144 156.69)",
+          "oklch(60.71% 0.0144 156.69)",
+          "oklch(72.14% 0.0144 156.69)",
+          "oklch(83.57% 0.0144 156.69)",
+          "oklch(95.00% 0.0144 156.69)"
         ]
       },
       "line": {
         "role": "neutral",
-        "displayName": "Filete de papel",
+        "displayName": "Divisores",
         "tonalRamp": [
-          "oklch(15% 0.01491 110.913)",
-          "oklch(26.43% 0.01491 110.913)",
-          "oklch(37.86% 0.01491 110.913)",
-          "oklch(49.29% 0.01491 110.913)",
-          "oklch(60.71% 0.01491 110.913)",
-          "oklch(72.14% 0.01491 110.913)",
-          "oklch(83.57% 0.01491 110.913)",
-          "oklch(95% 0.01491 110.913)"
+          "oklch(15.00% 0.0091 134.88)",
+          "oklch(26.43% 0.0091 134.88)",
+          "oklch(37.86% 0.0091 134.88)",
+          "oklch(49.29% 0.0091 134.88)",
+          "oklch(60.71% 0.0091 134.88)",
+          "oklch(72.14% 0.0091 134.88)",
+          "oklch(83.57% 0.0091 134.88)",
+          "oklch(95.00% 0.0091 134.88)"
         ]
       },
-      "accent": {
-        "role": "primary",
-        "displayName": "Vermelhão editorial",
-        "tonalRamp": [
-          "oklch(15% 0.15740 30.094)",
-          "oklch(26.43% 0.15740 30.094)",
-          "oklch(37.86% 0.15740 30.094)",
-          "oklch(49.29% 0.15740 30.094)",
-          "oklch(60.71% 0.15740 30.094)",
-          "oklch(72.14% 0.15740 30.094)",
-          "oklch(83.57% 0.15740 30.094)",
-          "oklch(95% 0.15740 30.094)"
-        ]
-      },
-      "sage": {
-        "role": "secondary",
-        "displayName": "Sálvia clara",
-        "tonalRamp": [
-          "oklch(15% 0.01759 117.304)",
-          "oklch(26.43% 0.01759 117.304)",
-          "oklch(37.86% 0.01759 117.304)",
-          "oklch(49.29% 0.01759 117.304)",
-          "oklch(60.71% 0.01759 117.304)",
-          "oklch(72.14% 0.01759 117.304)",
-          "oklch(83.57% 0.01759 117.304)",
-          "oklch(95% 0.01759 117.304)"
-        ]
-      },
-      "dark": {
+      "selection": {
         "role": "neutral",
-        "displayName": "Carvão vegetal",
+        "displayName": "Seleção de texto",
         "tonalRamp": [
-          "oklch(15% 0.01659 137.867)",
-          "oklch(26.43% 0.01659 137.867)",
-          "oklch(37.86% 0.01659 137.867)",
-          "oklch(49.29% 0.01659 137.867)",
-          "oklch(60.71% 0.01659 137.867)",
-          "oklch(72.14% 0.01659 137.867)",
-          "oklch(83.57% 0.01659 137.867)",
-          "oklch(95% 0.01659 137.867)"
+          "oklch(15.00% 0.0202 150.09)",
+          "oklch(26.43% 0.0202 150.09)",
+          "oklch(37.86% 0.0202 150.09)",
+          "oklch(49.29% 0.0202 150.09)",
+          "oklch(60.71% 0.0202 150.09)",
+          "oklch(72.14% 0.0202 150.09)",
+          "oklch(83.57% 0.0202 150.09)",
+          "oklch(95.00% 0.0202 150.09)"
         ]
       },
-      "dark-muted": {
+      "copy-border": {
         "role": "neutral",
-        "displayName": "Texto sobre carvão",
+        "displayName": "Borda de cópia",
         "tonalRamp": [
-          "oklch(15% 0.02413 122.795)",
-          "oklch(26.43% 0.02413 122.795)",
-          "oklch(37.86% 0.02413 122.795)",
-          "oklch(49.29% 0.02413 122.795)",
-          "oklch(60.71% 0.02413 122.795)",
-          "oklch(72.14% 0.02413 122.795)",
-          "oklch(83.57% 0.02413 122.795)",
-          "oklch(95% 0.02413 122.795)"
+          "oklch(15.00% 0.0146 148.76)",
+          "oklch(26.43% 0.0146 148.76)",
+          "oklch(37.86% 0.0146 148.76)",
+          "oklch(49.29% 0.0146 148.76)",
+          "oklch(60.71% 0.0146 148.76)",
+          "oklch(72.14% 0.0146 148.76)",
+          "oklch(83.57% 0.0146 148.76)",
+          "oklch(95.00% 0.0146 148.76)"
         ]
       },
-      "dark-line": {
+      "copy-hover": {
         "role": "neutral",
-        "displayName": "Filete sobre carvão",
+        "displayName": "Hover de cópia",
         "tonalRamp": [
-          "oklch(15% 0.02730 129.155)",
-          "oklch(26.43% 0.02730 129.155)",
-          "oklch(37.86% 0.02730 129.155)",
-          "oklch(49.29% 0.02730 129.155)",
-          "oklch(60.71% 0.02730 129.155)",
-          "oklch(72.14% 0.02730 129.155)",
-          "oklch(83.57% 0.02730 129.155)",
-          "oklch(95% 0.02730 129.155)"
+          "oklch(15.00% 0.0095 140.52)",
+          "oklch(26.43% 0.0095 140.52)",
+          "oklch(37.86% 0.0095 140.52)",
+          "oklch(49.29% 0.0095 140.52)",
+          "oklch(60.71% 0.0095 140.52)",
+          "oklch(72.14% 0.0095 140.52)",
+          "oklch(83.57% 0.0095 140.52)",
+          "oklch(95.00% 0.0095 140.52)"
         ]
       }
     },
     "typographyMeta": {
       "display": {
         "displayName": "Nome",
-        "purpose": "Título da abertura."
-      },
-      "display-emphasis": {
-        "displayName": "Ênfase editorial",
-        "purpose": "Instrument Serif em itálico; a fonte local possui somente essa variante."
+        "purpose": "Nome na apresentação."
       },
       "headline": {
-        "displayName": "Seção",
-        "purpose": "Títulos principais de seção."
-      },
-      "title": {
-        "displayName": "Projeto",
-        "purpose": "Nome de projeto profissional."
-      },
-      "statement": {
-        "displayName": "Síntese",
-        "purpose": "Frase de abertura de um caso."
-      },
-      "body": {
-        "displayName": "Texto base",
-        "purpose": "Base tipográfica do site."
-      },
-      "body-detail": {
-        "displayName": "Descrição",
-        "purpose": "Texto técnico e descritivo."
-      },
-      "action": {
-        "displayName": "Ação",
-        "purpose": "Links e botões principais."
-      },
-      "label": {
-        "displayName": "Metadados",
-        "purpose": "Legendas, tecnologias e controles compactos."
-      },
-      "cv-body": {
-        "displayName": "Corpo do currículo",
-        "purpose": "Conteúdo documental em tela e impressão."
-      },
-      "cv-contact": {
-        "displayName": "Contato do currículo",
-        "purpose": "Metadados de contato no currículo."
+        "displayName": "Seções",
+        "purpose": "Títulos de seção."
       }
     },
-    "shadows": [
-      {
-        "name": "preview",
-        "value": "0 12px 32px #25282313",
-        "purpose": "Captura na abertura."
-      },
-      {
-        "name": "project",
-        "value": "0 10px 26px #20271b18",
-        "purpose": "Capturas de projetos profissionais."
-      }
-    ],
+    "shadows": [],
     "motion": [
       {
-        "name": "ease",
-        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
-        "purpose": "Suavização de imagens e setas."
-      },
-      {
-        "name": "state",
-        "value": "0.2s",
-        "purpose": "Mudança de fundo, cor e giro de detalhes."
-      },
-      {
-        "name": "page-wipe",
-        "value": "0.55s",
-        "purpose": "Revelação de captura selecionada por clip-path."
-      },
-      {
-        "name": "preview-hover",
-        "value": "0.6s",
-        "purpose": "Translação horizontal de 4px na prévia."
-      },
-      {
-        "name": "project-hover",
-        "value": "0.7s",
-        "purpose": "Translação vertical de 5px na captura do projeto."
-      },
-      {
-        "name": "arrow-hover",
-        "value": "0.25s",
-        "purpose": "Translação diagonal da seta de projeto acadêmico."
+        "name": "scroll",
+        "value": "smooth",
+        "purpose": "Rolagem de âncoras; usa auto com prefers-reduced-motion: reduce. Sem transições ou animações."
       }
     ],
     "breakpoints": [
       {
-        "name": "compact-max",
-        "value": "1100px"
+        "name": "tablet",
+        "value": "760px"
       },
       {
-        "name": "tablet-max",
-        "value": "800px"
-      },
-      {
-        "name": "mobile-max",
+        "name": "mobile",
         "value": "520px"
-      },
-      {
-        "name": "wide-min",
-        "value": "1500px"
       }
     ]
   },
   "components": [
     {
-      "name": "Ação principal",
-      "kind": "button",
-      "refersTo": "button-primary",
-      "description": "Link preenchido para a principal ação da abertura.",
-      "html": "<a class=\"ds-button\" href=\"#projetos\">Conheça meu trabalho<svg class=\"ds-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M12 4v16m-6-6 6 6 6-6\"/></svg></a>",
-      "css": ".ds-button{font-family:var(--sans,Manrope,Arial,sans-serif);background:var(--ink,#252823);color:var(--paper,#f6f5ef);display:inline-flex;align-items:center;justify-content:center;gap:22px;min-height:49px;padding:10px 19px;font-size:14px;font-weight:600;line-height:1.75;border:1px solid var(--ink,#252823);text-decoration:none;transition:background .2s;}.ds-button:hover{background:var(--accent,#ad3628);border-color:var(--accent,#ad3628);}.ds-button:focus-visible{outline:2px solid var(--accent,#ad3628);outline-offset:6px;}.ds-icon{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0;}@media(prefers-reduced-motion:reduce){.ds-button{transition:none;}}"
-    },
-    {
-      "name": "Link de apoio",
-      "kind": "button",
+      "name": "Link de perfil",
+      "kind": "custom",
       "refersTo": "text-link",
-      "description": "Ação textual com ícone e sublinhado no hover.",
-      "html": "<a class=\"ds-text-link\" href=\"#projetos\">Conhecer o projeto<svg class=\"ds-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M5 19 19 5M5 5h14v14\"/></svg></a>",
-      "css": ".ds-text-link{font-family:var(--sans,Manrope,Arial,sans-serif);color:var(--ink,#252823);display:inline-flex;align-items:center;gap:10px;font-size:14px;font-weight:600;line-height:1.75;min-height:44px;text-decoration:none;text-underline-offset:5px;}.ds-text-link:hover{text-decoration:underline;}.ds-text-link:focus-visible{outline:2px solid var(--accent,#ad3628);outline-offset:6px;}.ds-icon{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0;}.ds-text-link .ds-icon{width:16px;height:16px;}"
+      "description": "Link textual com seta para um perfil externo.",
+      "html": "<a class=\"ds-link\" href=\"https://github.com/gabrieldealbuquerque\">GitHub <svg class=\"ds-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M6 18 18 6M6 6h12v12\"/></svg></a>",
+      "css": ".ds-link{font-family:var(--font, Manrope, \"Noto Sans JP\", sans-serif);line-height:1.8;display:inline-flex;align-items:center;gap:6px;min-height:36px;color:var(--text, #252b28);font-size:13px;text-decoration:none;text-underline-offset:5px;}.ds-link:hover{color:var(--accent, #315f4a);text-decoration:underline;}.ds-link:focus-visible{outline:2px solid var(--accent, #315f4a);outline-offset:5px;border-radius:2px;}.ds-icon{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0;}"
     },
     {
       "name": "Copiar e-mail",
       "kind": "button",
       "refersTo": "copy-email",
-      "description": "Controle contornado para copiar o contato em contextos compatíveis.",
-      "html": "<button class=\"ds-copy-email\" type=\"button\">Copiar e-mail</button>",
-      "css": ".ds-copy-email{font-family:var(--sans,Manrope,Arial,sans-serif);color:var(--ink,#252823);border:1px solid #a2ac93;background:transparent;font-size:11px;line-height:1.75;padding:9px 14px;min-height:40px;min-width:110px;cursor:pointer;}.ds-copy-email:hover{background:#dbe0ce;}.ds-copy-email:focus-visible{outline:2px solid var(--accent,#ad3628);outline-offset:6px;}"
+      "description": "Botão discreto de contato; a implementação anuncia o resultado em uma região de status.",
+      "html": "<button class=\"ds-copy\" type=\"button\">Copiar e-mail</button>",
+      "css": ".ds-copy{font-family:var(--font, Manrope, \"Noto Sans JP\", sans-serif);line-height:1.8;background:transparent;color:var(--text, #252b28);border:1px solid #cdd6ce;border-radius:5px;padding:8px 13px;font-size:12px;min-height:38px;cursor:pointer;}.ds-copy:hover{background:#edf2ec;}.ds-copy:focus-visible{outline:2px solid var(--accent, #315f4a);outline-offset:5px;border-radius:2px;}.ds-copy:disabled{cursor:wait;opacity:.6;}"
+    },
+    {
+      "name": "Idiomas",
+      "kind": "nav",
+      "refersTo": "language",
+      "description": "Seleção textual; o idioma ativo tem peso maior e sublinhado.",
+      "html": "<div class=\"ds-languages\" role=\"group\" aria-label=\"Idioma\"><button type=\"button\" lang=\"pt-BR\" aria-pressed=\"true\">PT</button><button type=\"button\" lang=\"en\" aria-pressed=\"false\">EN</button><button type=\"button\" lang=\"ja\" aria-pressed=\"false\">日本語</button></div>",
+      "css": ".ds-languages{display:flex;gap:3px;}.ds-languages button{font-family:var(--font, Manrope, \"Noto Sans JP\", sans-serif);line-height:1.8;border:0;background:transparent;color:var(--muted, #626b65);font-size:12px;padding:6px 9px;min-height:36px;position:relative;cursor:pointer;}.ds-languages button[aria-pressed=\"true\"]{color:var(--accent, #315f4a);font-weight:700;}.ds-languages button[aria-pressed=\"true\"]::after{content:\"\";position:absolute;height:2px;left:9px;right:9px;bottom:3px;background:var(--accent, #315f4a);}.ds-languages button:hover{color:var(--text, #252b28);}.ds-languages button:focus-visible{outline:2px solid var(--accent, #315f4a);outline-offset:5px;border-radius:2px;}"
     },
     {
       "name": "Navegação",
       "kind": "nav",
-      "refersTo": "navigation",
-      "description": "Links principais sempre expostos.",
-      "html": "<nav class=\"ds-nav\" aria-label=\"Navegação principal\"><a href=\"#projetos\">Projetos</a><a href=\"#sobre\">Sobre</a><a href=\"#contato\">Contato</a></nav>",
-      "css": ".ds-nav{font-family:var(--sans,Manrope,Arial,sans-serif);display:flex;gap:36px;align-items:center;color:var(--ink,#252823);font-size:14px;font-weight:600;line-height:1.75;}.ds-nav a{padding-block:12px;color:inherit;text-decoration:none;}.ds-nav a:hover{color:var(--accent,#ad3628);}.ds-nav a:focus-visible{outline:2px solid var(--accent,#ad3628);outline-offset:6px;}@media(max-width:800px){.ds-nav{gap:23px;}}@media(max-width:520px){.ds-nav{gap:21px;font-size:11px;}}"
+      "description": "Links de seção sempre visíveis.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Navegação principal\"><a href=\"#sobre\">Sobre</a><a href=\"#projetos\">Projetos</a><a href=\"#contato\">Contato</a></nav>",
+      "css": ".ds-nav{font-family:var(--font, Manrope, \"Noto Sans JP\", sans-serif);line-height:1.8;display:flex;gap:28px;font-size:13px;}.ds-nav a{display:flex;align-items:center;min-height:36px;color:var(--text, #252b28);text-decoration:none;text-underline-offset:5px;}.ds-nav a:hover{color:var(--accent, #315f4a);text-decoration:underline;}.ds-nav a:focus-visible{outline:2px solid var(--accent, #315f4a);outline-offset:5px;border-radius:2px;}@media(max-width:520px){.ds-nav{gap:16px;font-size:12px;}}"
     },
     {
-      "name": "Seletor de projetos",
+      "name": "Projeto acadêmico",
       "kind": "custom",
-      "refersTo": "project-selector",
-      "description": "Estados visuais do grupo de seleção; troca de conteúdo depende do JavaScript do site.",
-      "html": "<div class=\"ds-selector\" role=\"group\" aria-label=\"Prévia dos projetos\"><button type=\"button\" aria-pressed=\"true\">Acctsy</button><button type=\"button\" aria-pressed=\"false\">TOV</button><button type=\"button\" aria-pressed=\"false\">Meridian</button></div>",
-      "css": ".ds-selector{display:flex;gap:20px;border-top:1px solid var(--line,#d6d7cc);}.ds-selector button{font-family:var(--sans,Manrope,Arial,sans-serif);font-size:11px;line-height:1.75;background:none;border:0;border-top:2px solid transparent;min-height:40px;padding:8px 0;margin-top:-1px;color:var(--muted,#66695e);cursor:pointer;}.ds-selector button[aria-pressed=\"true\"]{border-top-color:var(--accent,#ad3628);color:var(--accent,#ad3628);font-weight:700;}.ds-selector button:hover{color:var(--accent,#ad3628);}.ds-selector button:focus-visible{outline:2px solid var(--accent,#ad3628);outline-offset:6px;}"
+      "description": "Uma linha clicável apresenta título, descrição, linguagem e destino.",
+      "html": "<div class=\"ds-project\"><a href=\"https://github.com/gabrieldealbuquerque/Redes-Neurais\"><span class=\"ds-project-info\"><strong>Redes neurais</strong><span>Experimentos com regressão linear e métodos de gradiente.</span></span><span class=\"ds-project-language\">Python</span><svg class=\"ds-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M6 18 18 6M6 6h12v12\"/></svg></a></div>",
+      "css": ".ds-project{font-family:var(--font, Manrope, \"Noto Sans JP\", sans-serif);line-height:1.8;border-block:1px solid var(--line, #e1e5df);}.ds-project a{display:flex;align-items:center;gap:22px;padding-block:18px;color:var(--text, #252b28);text-decoration:none;}.ds-project-info{display:flex;flex-direction:column;gap:3px;flex:1;}.ds-project-info strong{font-weight:500;font-size:14px;}.ds-project-info>span{color:var(--muted, #626b65);font-size:13px;}.ds-project-language{font-size:12px;color:var(--muted, #626b65);white-space:nowrap;}.ds-project a:hover{color:var(--accent, #315f4a);}.ds-project a:hover strong{text-decoration:underline;text-underline-offset:4px;}.ds-project a:focus-visible{outline:2px solid var(--accent, #315f4a);outline-offset:5px;border-radius:2px;}.ds-icon{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0;}.ds-project .ds-icon{width:16px;height:16px;color:var(--muted, #626b65);}@media(max-width:520px){.ds-project a{gap:12px;}.ds-project-language{display:none;}.ds-project-info>span{font-size:12px;}}"
     },
     {
-      "name": "Detalhes expansíveis",
+      "name": "E-mail",
       "kind": "custom",
-      "refersTo": "disclosure",
-      "description": "Texto técnico complementar com abertura nativa do navegador.",
-      "html": "<details class=\"ds-details\"><summary>Por dentro da engenharia<svg class=\"ds-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M12 5v14M5 12h14\"/></svg></summary><div class=\"ds-detail-content\">Backend multi-tenant com permissões por escritório e cliente.</div></details>",
-      "css": ".ds-details{font-family:var(--sans,Manrope,Arial,sans-serif);color:var(--ink,#252823);border-block:1px solid var(--line,#d6d7cc);line-height:1.75;}.ds-details summary{display:flex;justify-content:space-between;align-items:center;gap:20px;list-style:none;padding-block:14px;cursor:pointer;font-size:14px;font-weight:600;}.ds-details summary::-webkit-details-marker{display:none;}.ds-details summary:focus-visible{outline:2px solid var(--accent,#ad3628);outline-offset:6px;}.ds-icon{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0;}.ds-details .ds-icon{width:14px;height:14px;transition:transform .2s;}.ds-details[open] .ds-icon{transform:rotate(45deg);}.ds-detail-content{font-size:14px;color:var(--muted,#66695e);padding-bottom:19px;}@media(prefers-reduced-motion:reduce){.ds-details .ds-icon{transition:none;}}"
+      "description": "Contato direto com endereço legível e quebra de linha quando necessário.",
+      "html": "<a class=\"ds-email\" href=\"mailto:gabrieldealbuquerque1@gmail.com\"><svg class=\"ds-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><rect x=\"3\" y=\"5\" width=\"18\" height=\"14\" rx=\"2\"/><path d=\"m3 6 9 7 9-7\"/></svg><span>gabrieldealbuquerque1@gmail.com</span></a>",
+      "css": ".ds-email{font-family:var(--font, Manrope, \"Noto Sans JP\", sans-serif);line-height:1.8;display:inline-flex;align-items:center;gap:10px;color:var(--accent, #315f4a);font-size:15px;min-height:40px;overflow-wrap:anywhere;text-decoration:none;text-underline-offset:5px;}.ds-email:hover>span{text-decoration:underline;}.ds-email:focus-visible{outline:2px solid var(--accent, #315f4a);outline-offset:5px;border-radius:2px;}.ds-icon{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0;}.ds-email .ds-icon{width:18px;height:18px;}@media(max-width:520px){.ds-email{font-size:13px;gap:8px;}.ds-email .ds-icon{width:16px;height:16px;}}"
     },
     {
-      "name": "Caso de projeto",
-      "kind": "card",
-      "refersTo": "project-case",
-      "description": "Bloco editorial de projeto sem fundo ou sombra de cartão.",
-      "html": "<article class=\"ds-case\"><div class=\"ds-case-title\"><h3>Acctsy</h3><span>CTO · atuação atual</span></div><p class=\"ds-statement\">Transformar documentos contábeis em informação útil.</p><p class=\"ds-description\">Atuo no desenvolvimento de um SaaS para escritórios de contabilidade, da arquitetura das APIs à interface e à infraestrutura.</p><a class=\"ds-case-link\" href=\"https://www.acctsy.com.br/\">Conhecer a Acctsy<svg class=\"ds-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M5 19 19 5M5 5h14v14\"/></svg></a></article>",
-      "css": ".ds-case{font-family:var(--sans,Manrope,Arial,sans-serif);color:var(--ink,#252823);line-height:1.75;}.ds-case-title{display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-bottom:20px;}.ds-case-title h3{margin:0;font-size:31px;font-weight:600;line-height:1.06;letter-spacing:-.035em;}.ds-case-title span{font-size:11px;color:var(--muted,#66695e);}.ds-statement{font-size:20px;font-weight:500;line-height:1.45;letter-spacing:-.025em;margin:0 0 16px;max-width:30ch;}.ds-description{font-size:14px;color:var(--muted,#66695e);line-height:1.85;margin:0;}.ds-case-link{display:inline-flex;align-items:center;gap:10px;font-size:14px;font-weight:600;min-height:44px;margin-top:15px;color:inherit;text-decoration:none;text-underline-offset:5px;}.ds-case-link:hover{text-decoration:underline;}.ds-case-link:focus-visible{outline:2px solid var(--accent,#ad3628);outline-offset:6px;}.ds-icon{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0;}.ds-case-link .ds-icon{width:16px;height:16px;}"
+      "name": "Project preview",
+      "kind": "custom",
+      "description": "Full project screenshots retain their original aspect ratio in the wider experience column.",
+      "html": "<a class=\"ds-preview\" href=\"#project\">Project preview</a>",
+      "css": ".ds-preview { display: grid; place-items: center; width: 300px; aspect-ratio: 8 / 5; background: #fafbf9; color: #315f4a; border-radius: 6px; font: 13px Manrope, sans-serif; text-underline-offset: 3px; } .ds-preview:hover { text-decoration: underline; } .ds-preview:focus-visible { outline: 2px solid #315f4a; outline-offset: 5px; }"
+    },
+    {
+      "name": "Chart filters",
+      "kind": "button",
+      "description": "Native buttons filter the real rental validation points; the selected button exposes aria-pressed.",
+      "html": "<div class=\"ds-chart-filters\"><button type=\"button\" aria-pressed=\"true\">Todos</button><button type=\"button\" aria-pressed=\"false\">Apartamentos</button><button type=\"button\" aria-pressed=\"false\">Casas</button></div>",
+      "css": ".ds-chart-filters { display: flex; flex-wrap: wrap; gap: 4px; font: 13px Manrope, sans-serif; } .ds-chart-filters button { min-height: 42px; padding: 8px 12px; border: 1px solid transparent; border-radius: 3px; background: transparent; color: #626b65; font: inherit; font-weight: 600; cursor: pointer; } .ds-chart-filters button[aria-pressed=true] { background: #315f4a; color: #fafbf9; } .ds-chart-filters button:hover { border-color: #b7c5bb; } .ds-chart-filters button:focus-visible { outline: 2px solid #315f4a; outline-offset: 4px; }"
     }
   ],
   "narrative": {
-    "northStar": "Fólio pessoal cuidadosamente composto",
-    "overview": "Um fólio pessoal cuidadosamente composto: papel quente, tinta escura e um acento vermelho contido. A inspiração editorial japonesa aparece na assimetria, nos intervalos de leitura e na economia de formas.\n\nManrope sustenta a leitura técnica; Instrument Serif em itálico introduz uma assinatura humana no nome e nos títulos. Capturas reais de projetos ficam sobre fundos suaves, enquanto filetes e espaço separam o conteúdo. A interface mantém densidade moderada, ações visíveis e leitura contínua no celular.",
+    "overview": "Portfólio minimalista, compacto e orientado à leitura. A inspiração leve em jhvlima.github.io se traduz em apresentação pessoal direta, tipografia discreta e links visíveis. Esta documentação descreve o site atual em `index.html`, `styles.css` e `script.js`.",
     "keyCharacteristics": [
-      "Fundo claro quente com contraste de tinta escura.",
-      "Hierarquia tipográfica expressiva, com itálico serifado pontual.",
-      "Projetos apresentados como evidências visuais, com molduras planas.",
-      "Movimento breve, acionado pelo usuário e dispensável à leitura."
+      "Fundo claro, texto escuro e acento verde contido.",
+      "Uma família visual sans-serif, com suporte a português, inglês e japonês.",
+      "Avatar real do GitHub, separadores finos e conteúdo sem sombras."
     ],
-    "rules": [
-      {
-        "name": "The Acento Contido Rule",
-        "body": "Use o vermelho para assinatura, foco e estados de interação; mantenha superfícies extensas em papel, sálvia ou tinta escura.",
-        "section": "colors"
-      },
-      {
-        "name": "The Duas Vozes Rule",
-        "body": "Mantenha Manrope em textos e controles; reserve Instrument Serif em itálico à ênfase editorial dos títulos.",
-        "section": "typography"
-      },
-      {
-        "name": "The Papel Plano Rule",
-        "body": "Use filetes e fundos tonais para separar conteúdo; as sombras suaves pertencem às capturas de projetos.",
-        "section": "elevation"
-      }
-    ],
+    "rules": [],
     "dos": [
-      "**Do** reutilize as cores e famílias do frontmatter, mantendo o itálico serifado como ênfase.",
-      "**Do** conserve ações e links reconhecíveis, foco visível e navegação por teclado.",
-      "**Do** preserve texto, imagens e contato em uma coluna quando o espaço diminuir.",
-      "**Do** use capturas reais, atribuições corretas e descrições concretas do trabalho.",
-      "**Do** mantenha a leitura sem JavaScript e respeite a preferência por movimento reduzido."
+      "Do preserve a escala tipográfica contida, os neutros claros e o acento verde.",
+      "Do mantenha o avatar do GitHub, foco visível e os três idiomas com espaço para quebra de texto.",
+      "Do preserve links diretos, atribuições corretas e descrições concretas dos projetos."
     ],
     "donts": [
-      "**Don't** transforme a inspiração japonesa em texto fictício ou símbolos culturais decorativos.",
-      "**Don't** aplique sombras de cartões a blocos de texto nem arredondamento amplo às molduras.",
-      "**Don't** anime a troca de projetos automaticamente ou esconda conteúdo para revelá-lo no scroll.",
-      "**Don't** substitua evidências por métricas inventadas, depoimentos ou barras de proficiência."
+      "Don't retome os títulos enormes em itálico ou o carrossel de capturas rejeitados pelo usuário.",
+      "Don't acrescente métricas ou níveis de proficiência inventados."
     ]
   }
 }
