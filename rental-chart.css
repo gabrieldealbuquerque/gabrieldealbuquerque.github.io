@@ -5,12 +5,12 @@
   display: none !important;
 }
 .rental-chart {
-  --chart-ink: #252b28;
-  --chart-muted: #626b65;
-  --chart-accent: #315f4a;
-  --chart-grid: #e1e5df;
+  --chart-ink: var(--text);
+  --chart-muted: var(--muted);
+  --chart-accent: var(--accent);
+  --chart-grid: var(--line);
   color: var(--chart-ink);
-  background: #fafbf9;
+  background: var(--background);
   padding: clamp(16px, 3vw, 30px);
   border: 1px solid var(--chart-grid);
   border-radius: 3px;
@@ -41,12 +41,12 @@
   cursor: pointer;
 }
 .rental-chart__filter:hover {
-  border-color: #b7c5bb;
+  border-color: var(--control-border);
   color: var(--chart-accent);
 }
 .rental-chart__filter[aria-pressed="true"] {
   background: var(--chart-accent);
-  color: #fafbf9;
+  color: var(--on-accent);
 }
 .rental-chart__filter:focus-visible,
 .rental-chart__plot:focus-visible {
@@ -93,7 +93,7 @@
   font-weight: 600;
 }
 .rental-chart__identity {
-  stroke: #7b8580;
+  stroke: var(--chart-reference);
   stroke-width: 1.25;
   stroke-dasharray: 5 5;
 }
@@ -105,11 +105,11 @@
   fill: var(--chart-accent);
 }
 .rental-chart__points--house {
-  fill: #996a48;
+  fill: var(--chart-house);
   fill-opacity: 0.55;
 }
 .rental-chart__selection {
-  fill: #fafbf9;
+  fill: var(--background);
   fill-opacity: 0.15;
   stroke: var(--chart-ink);
   stroke-width: 2;
@@ -138,13 +138,13 @@
   border-radius: 50%;
 }
 .rental-chart__legend-item--house .rental-chart__legend-mark {
-  background: #996a48;
+  background: var(--chart-house);
   border-radius: 0;
 }
 .rental-chart__legend-item--identity .rental-chart__legend-mark {
   width: 19px;
   height: 0;
-  border-top: 1px dashed #7b8580;
+  border-top: 1px dashed var(--chart-reference);
   background: transparent;
   border-radius: 0;
 }
@@ -210,7 +210,7 @@
   border: 0;
 }
 .rental-chart ::selection {
-  color: #fafbf9;
+  color: var(--on-accent);
   background: var(--chart-accent);
 }
 @media (max-width: 600px) {

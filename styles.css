@@ -13,15 +13,37 @@
   font-display: swap;
 }
 :root {
+  color-scheme: light;
   --background: #fafbf9;
   --text: #252b28;
   --muted: #626b65;
   --accent: #315f4a;
   --line: #e1e5df;
   --selection: #dce9de;
+  --control-border: #cdd6ce;
+  --control-hover: #edf2ec;
+  --scrollbar: #a5b1a7;
+  --on-accent: #fafbf9;
+  --chart-house: #996a48;
+  --chart-reference: #7b8580;
   --font:
     Manrope, "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic",
     sans-serif;
+}
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --background: #161c19;
+  --text: #e5eae6;
+  --muted: #afbab1;
+  --accent: #9ecbae;
+  --line: #354138;
+  --selection: #314b3d;
+  --control-border: #526457;
+  --control-hover: #24332a;
+  --scrollbar: #657b6b;
+  --on-accent: #161c19;
+  --chart-house: #dfab83;
+  --chart-reference: #a5b2a9;
 }
 * {
   box-sizing: border-box;
@@ -29,7 +51,7 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 32px;
-  scrollbar-color: #a5b1a7 var(--background);
+  scrollbar-color: var(--scrollbar) var(--background);
 }
 body {
   margin: 0;
@@ -124,7 +146,7 @@ p {
   transform: translateY(-170%);
   padding: 10px 16px;
   background: var(--text);
-  color: white;
+  color: var(--background);
 }
 .skip-link:focus {
   transform: none;
@@ -149,6 +171,39 @@ p {
 }
 .site-header nav a:hover {
   text-decoration: underline;
+}
+.header-controls {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-shrink: 0;
+}
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: transparent;
+  color: var(--accent);
+}
+.theme-toggle:hover {
+  border-color: var(--control-border);
+  background: var(--control-hover);
+}
+.theme-toggle .icon {
+  width: 18px;
+  height: 18px;
+}
+.theme-sun,
+html[data-theme="dark"] .theme-moon {
+  display: none;
+}
+html[data-theme="dark"] .theme-sun {
+  display: block;
 }
 .languages {
   display: flex;
@@ -399,6 +454,12 @@ h3 {
   font-size: 14px;
   max-width: 44ch;
 }
+.skills-security {
+  grid-column: 1 / -1;
+}
+.skills-security dd {
+  max-width: 78ch;
+}
 .contact {
   border-top: 1px solid var(--line);
   padding-top: 34px;
@@ -435,7 +496,7 @@ h3 {
 }
 .copy-email {
   background: transparent;
-  border: 1px solid #cdd6ce;
+  border: 1px solid var(--control-border);
   border-radius: 5px;
   padding: 8px 13px;
   font-size: 12px;
@@ -443,7 +504,7 @@ h3 {
   flex-shrink: 0;
 }
 .copy-email:hover {
-  background: #edf2ec;
+  background: var(--control-hover);
 }
 .contact .copy-status {
   font-size: 12px;
@@ -841,4 +902,23 @@ html:lang(ja) body {
   aspect-ratio: 8 / 5;
   object-fit: contain;
   background: #fff;
+}
+
+@media (max-width: 600px) {
+  .site-header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 6px 12px;
+  }
+  .header-controls {
+    grid-column: 1 / -1;
+    grid-row: 1;
+    justify-self: end;
+    gap: 10px;
+  }
+  .site-header nav {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    justify-content: space-between;
+  }
 }

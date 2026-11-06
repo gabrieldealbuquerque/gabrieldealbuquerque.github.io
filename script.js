@@ -72,6 +72,11 @@ const translations = {
     aiSkills:
       "Integração de LLMs via APIs, engenharia de prompt, RAG, embeddings e busca semântica. Extração estruturada de documentos, OCR e pipelines de IA integrados a aplicações.",
     infraLabel: "Infraestrutura",
+    securityLabel: "Segurança de aplicações",
+    themeDark: "Ativar modo escuro",
+    themeLight: "Ativar modo claro",
+    securitySkills: "Nginx, Cloudflare e HTTPS/TLS na infraestrutura de aplicações. Autenticação com JWT e OAuth 2.0, sessões criptografadas em cookies HttpOnly e controle de acesso por papéis e permissões (RBAC).",
+    securityPractices: "Isolamento de dados em SaaS multi-tenant, proteção contra CSRF, rate limiting com Redis, validação de uploads e webhooks, além de logs de auditoria.",
     contactTitle: "Contato",
     contactDescription:
       "Para conversar sobre projetos, tecnologia ou oportunidades.",
@@ -155,6 +160,11 @@ const translations = {
     aiSkills:
       "LLM integration through APIs, prompt engineering, RAG, embeddings and semantic search. Structured document extraction, OCR and AI pipelines integrated into applications.",
     infraLabel: "Infrastructure",
+    securityLabel: "Application security",
+    themeDark: "Switch to dark mode",
+    themeLight: "Switch to light mode",
+    securitySkills: "Nginx, Cloudflare and HTTPS/TLS for application infrastructure. JWT and OAuth 2.0 authentication, encrypted sessions in HttpOnly cookies, and role- and permission-based access control (RBAC).",
+    securityPractices: "Data isolation in multi-tenant SaaS, CSRF protection, rate limiting with Redis, upload and webhook validation, and audit logs.",
     contactTitle: "Contact",
     contactDescription:
       "Get in touch about projects, technology or opportunities.",
@@ -238,6 +248,11 @@ const translations = {
     aiSkills:
       "APIを介したLLM連携、プロンプトエンジニアリング、RAG、埋め込み表現、意味検索。文書からの構造化データ抽出、OCR、アプリケーションに組み込むAIパイプライン。",
     infraLabel: "インフラ",
+    securityLabel: "アプリケーションセキュリティ",
+    themeDark: "ダークモードに切り替える",
+    themeLight: "ライトモードに切り替える",
+    securitySkills: "Nginx、Cloudflare、HTTPS／TLSを用いたアプリケーション基盤。JWT・OAuth 2.0による認証、HttpOnly Cookieに保存する暗号化セッション、ロールと権限に基づくアクセス制御（RBAC）。",
+    securityPractices: "マルチテナントSaaSでのデータ分離、CSRF対策、Redisによるレート制限、アップロードとWebhookの検証、監査ログ。",
     contactTitle: "連絡先",
     contactDescription:
       "プロジェクト、技術、お仕事について、お気軽にご連絡ください。",
@@ -261,6 +276,34 @@ const copyButton = document.querySelector(".copy-email");
 const copyStatus = document.querySelector(".copy-status");
 let currentLanguage = "pt";
 let copyTimer;
+const themeButton = document.querySelector(".theme-toggle");
+
+function updateThemeButton() {
+  const dark = document.documentElement.dataset.theme === "dark";
+  const label = translations[currentLanguage][dark ? "themeLight" : "themeDark"];
+  themeButton.setAttribute("aria-label", label);
+  themeButton.title = label;
+}
+
+function setTheme(theme, persist = false) {
+  const dark = theme === "dark";
+  document.documentElement.dataset.theme = dark ? "dark" : "light";
+  document.querySelector('meta[name="theme-color"]').content = dark ? "#161c19" : "#fafbf9";
+  updateThemeButton();
+  if (persist) {
+    try {
+      localStorage.setItem("portfolio-theme", dark ? "dark" : "light");
+    } catch {}
+  }
+}
+
+themeButton.addEventListener("click", () => {
+  setTheme(document.documentElement.dataset.theme === "dark" ? "light" : "dark", true);
+});
+themeButton.hidden = false;
+window.addEventListener("storage", (event) => {
+  if (event.key === "portfolio-theme" || event.key === null) setTheme(event.newValue);
+});
 
 function setLanguage(language, persist = false) {
   if (!Object.hasOwn(translations, language)) language = "pt";
@@ -270,6 +313,7 @@ function setLanguage(language, persist = false) {
   copyStatus.textContent = "";
   document.documentElement.lang = locales[language];
   document.title = strings.title;
+  updateThemeButton();
   document.querySelector('meta[name="description"]').content =
     strings.description;
   document.querySelector('meta[property="og:title"]').content = strings.title;

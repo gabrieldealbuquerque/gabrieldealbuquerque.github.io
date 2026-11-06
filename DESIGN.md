@@ -98,7 +98,7 @@ Em japonês, o corpo passa a entrelinha (1.95), e títulos de seção e trabalho
 
 ## Layout
 
-O contêiner central tem largura máxima (1008px), incluindo margens internas. Na página atual, a abertura combina texto e avatar de (144px); trabalhos usam coluna de identificação de (300px), intervalo de (36px) e descrição flexível. Competências dividem duas colunas. O intervalo principal entre seções é `section`.
+O contêiner central tem largura máxima (1008px), incluindo margens internas. Na página atual, a abertura combina texto e avatar de (144px); trabalhos usam coluna de identificação de (300px), intervalo de (36px) e descrição flexível. Competências dividem duas colunas; segurança de aplicações ocupa uma linha completa, com texto limitado a (78ch). O intervalo principal entre seções é `section`.
 
 Até (900px), a coluna das experiências passa a (240px) e o projeto TOV empilha prévia e descrição; até (600px), toda a experiência ocupa uma coluna. Até (760px), as margens usam `gutter-tablet`, o intervalo de seção usa `section-compact`, o nome mede (32px) e o avatar (112px). A biografia passa a ocupar toda a largura. Até (520px), as margens usam `gutter-mobile`, o nome mede (29px), as seções (19px) e o avatar (80px); trabalhos, competências e ações de contato empilham. Navegação e idiomas continuam visíveis. A linguagem dos projetos acadêmicos é omitida apenas nessa largura.
 
@@ -130,3 +130,7 @@ O avatar tem cantos suaves, com raio `avatar`, reduzido para (12px) e (10px) nos
 - **Do** preserve links diretos, atribuições corretas e descrições concretas dos projetos.
 - **Don't** retome os títulos enormes em itálico ou o carrossel de capturas rejeitados pelo usuário.
 - **Don't** acrescente métricas ou níveis de proficiência inventados.
+
+## Temas
+
+O tema inicial é claro. O botão com ícones lineares de lua e sol fica ao lado dos idiomas no desktop e no canto superior direito, acima da navegação, em telas de até (600px). A escolha é salva localmente e aplicada antes do CSS para evitar uma abertura clara ao retornar no modo escuro. O modo escuro usa fundo (#161c19), texto (#e5eae6), texto secundário (#afbab1) e verde (#9ecbae); gráfico, controles, seleção e barras de rolagem acompanham o tema. As imagens preservam suas cores. Os textos mantêm alinhamento à esquerda.

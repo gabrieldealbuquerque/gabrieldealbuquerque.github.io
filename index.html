@@ -40,6 +40,14 @@
       type="font/woff2"
       crossorigin
     />
+    <script>
+      try {
+        if (localStorage.getItem("portfolio-theme") === "dark") {
+          document.documentElement.dataset.theme = "dark";
+          document.querySelector('meta[name="theme-color"]').content = "#161c19";
+        }
+      } catch {}
+    </script>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="rental-chart.css" />
     <script src="script.js" defer></script>
@@ -80,6 +88,13 @@
       <symbol id="download" viewBox="0 0 24 24">
         <path d="M12 3v12m-5-5 5 5 5-5M5 17v4h14v-4" />
       </symbol>
+      <symbol id="sun" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="4" />
+        <path d="M12 2v2m0 16v2M2 12h2m16 0h2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42" />
+      </symbol>
+      <symbol id="moon" viewBox="0 0 24 24">
+        <path d="M20.9 13A9 9 0 0 1 11 3.1 9 9 0 1 0 20.9 13Z" />
+      </symbol>
       <symbol id="mail" viewBox="0 0 24 24">
         <rect x="3" y="5" width="18" height="14" rx="2" />
         <path d="m3 6 9 7 9-7" />
@@ -92,37 +107,49 @@
           ><a href="#projetos" data-i18n="navWork">Projetos</a
           ><a href="#contato" data-i18n="navContact">Contato</a>
         </nav>
-        <div
-          class="languages"
-          role="group"
-          aria-label="Idioma"
-          data-i18n-aria-label="languageLabel"
-          hidden
-        >
+        <div class="header-controls">
+          <div
+            class="languages"
+            role="group"
+            aria-label="Idioma"
+            data-i18n-aria-label="languageLabel"
+            hidden
+          >
+            <button
+              type="button"
+              lang="pt-BR"
+              data-lang="pt"
+              aria-label="Português"
+              aria-pressed="true"
+            >
+              PT</button
+            ><button
+              type="button"
+              lang="en"
+              data-lang="en"
+              aria-label="English"
+              aria-pressed="false"
+            >
+              EN</button
+            ><button
+              type="button"
+              lang="ja"
+              data-lang="ja"
+              aria-label="日本語"
+              aria-pressed="false"
+            >
+              日本語
+            </button>
+          </div>
           <button
+            class="theme-toggle"
             type="button"
-            lang="pt-BR"
-            data-lang="pt"
-            aria-label="Português"
-            aria-pressed="true"
+            aria-label="Ativar modo escuro"
+            title="Ativar modo escuro"
+            hidden
           >
-            PT</button
-          ><button
-            type="button"
-            lang="en"
-            data-lang="en"
-            aria-label="English"
-            aria-pressed="false"
-          >
-            EN</button
-          ><button
-            type="button"
-            lang="ja"
-            data-lang="ja"
-            aria-label="日本語"
-            aria-pressed="false"
-          >
-            日本語
+            <svg class="icon theme-moon" aria-hidden="true"><use href="#moon" /></svg>
+            <svg class="icon theme-sun" aria-hidden="true"><use href="#sun" /></svg>
           </button>
         </div>
       </header>
@@ -539,11 +566,11 @@
           <dl class="skills-list">
             <div>
               <dt data-i18n="backendLabel">Backend</dt>
-              <dd>Python, FastAPI, Node.js, PostgreSQL, SQLAlchemy, Redis.</dd>
+              <dd>Python, FastAPI, Node.js, PostgreSQL, SQLAlchemy, Pydantic, Alembic, Redis.</dd>
             </div>
             <div>
               <dt data-i18n="frontendLabel">Frontend</dt>
-              <dd>TypeScript, React, Next.js, Astro, HTML, CSS.</dd>
+              <dd>TypeScript, React, Next.js, Astro, Tailwind CSS, TanStack Query, HTML, CSS.</dd>
             </div>
             <div>
               <dt data-i18n="aiLabel">Inteligência artificial</dt>
@@ -563,7 +590,23 @@
             </div>
             <div>
               <dt data-i18n="infraLabel">Infraestrutura</dt>
-              <dd>Docker, Docker Compose, Linux, Git, Nginx, Coolify.</dd>
+              <dd>Docker, Docker Compose, Linux, Git, GitHub, Coolify.</dd>
+            </div>
+            <div class="skills-security">
+              <dt data-i18n="securityLabel">Segurança de aplicações</dt>
+              <dd>
+                <p data-i18n="securitySkills">
+                  Nginx, Cloudflare e HTTPS/TLS na infraestrutura de aplicações.
+                  Autenticação com JWT e OAuth 2.0, sessões criptografadas em
+                  cookies HttpOnly e controle de acesso por papéis e permissões
+                  (RBAC).
+                </p>
+                <p data-i18n="securityPractices">
+                  Isolamento de dados em SaaS multi-tenant, proteção contra CSRF,
+                  rate limiting com Redis, validação de uploads e webhooks,
+                  além de logs de auditoria.
+                </p>
+              </dd>
             </div>
           </dl>
         </section>

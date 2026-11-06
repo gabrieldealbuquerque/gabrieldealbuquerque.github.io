@@ -34,3 +34,7 @@ Não foram atribuídas métricas de impacto, datas de início de trabalho, níve
 
 - LiftUp: repositório público `gabrieldealbuquerque/liftup`, fork colaborativo do projeto original de `pedromendonca2/liftup`. Contribuições de Gabriel verificadas no histórico: organização de frontend/backend, execução local e diagrama. Apresentado como protótipo; a integração completa das telas de treino ainda está pendente. O logo vem de `frontend/assets/images/liftup-icon.jpg`, preservado sem alteração.
 - Curadoria: LiftUp substitui Dijkstra no portfólio por acrescentar contexto de desenvolvimento mobile e backend. O repositório Dijkstra não foi alterado.
+
+## Segurança e infraestrutura
+
+Cloudflare foi confirmado por Gabriel. As competências de segurança refletem a arquitetura da Acctsy: Nginx, sessões criptografadas em cookies HttpOnly, autenticação JWT/OAuth 2.0, controle por papéis e permissões, isolamento multi-tenant, proteção de origem, rate limiting, validação de uploads e webhooks e auditoria. A descrição pública apresenta capacidades gerais, sem configuração interna, credenciais ou métricas de segurança. Pydantic, Alembic, Tailwind CSS e TanStack Query foram conferidos no projeto.
